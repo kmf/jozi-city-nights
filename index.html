@@ -40,17 +40,17 @@
       --m-border: #b0b3be;
 
       --m-pink: #d6197a;
-      --m-purple: #8c19b1;
-      --m-green: #2e8a4e;
-      --m-yellow: #b08900;
-      --m-cyan: #1a8fa1;
-      --m-blue: #506dba;
-      --m-orange: #c4600a;
+      --m-purple: #7928a8;
+      --m-green: #16864a;
+      --m-yellow: #c49000;
+      --m-cyan: #0891b2;
+      --m-blue: #4f46e5;
+      --m-orange: #d9580a;
       --m-red: #d6197a;
-      --m-teal: #1a7a6d;
-      --m-mint: #0d7d8c;
-      --m-sky: #2b6cb0;
-      --m-light-cyan: #506dba;
+      --m-teal: #0d9488;
+      --m-mint: #0e7490;
+      --m-sky: #2563eb;
+      --m-light-cyan: #4f46e5;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -491,26 +491,26 @@ const morningEnv = [
 
 const morningSyntax = [
   { name: 'pink',    hex: '#d6197a' },
-  { name: 'purple',  hex: '#8c19b1' },
-  { name: 'blue',    hex: '#506dba' },
-  { name: 'sky',     hex: '#2b6cb0' },
-  { name: 'cyan',    hex: '#1a8fa1' },
-  { name: 'teal',    hex: '#1a7a6d' },
-  { name: 'mint',    hex: '#0d7d8c' },
-  { name: 'green',   hex: '#2e8a4e' },
-  { name: 'yellow',  hex: '#b08900' },
-  { name: 'orange',  hex: '#c4600a' },
-  { name: 'ice',     hex: '#506dba' },
+  { name: 'purple',  hex: '#7928a8' },
+  { name: 'blue',    hex: '#4f46e5' },
+  { name: 'sky',     hex: '#2563eb' },
+  { name: 'cyan',    hex: '#0891b2' },
+  { name: 'teal',    hex: '#0d9488' },
+  { name: 'mint',    hex: '#0e7490' },
+  { name: 'green',   hex: '#16864a' },
+  { name: 'yellow',  hex: '#c49000' },
+  { name: 'orange',  hex: '#d9580a' },
+  { name: 'ice',     hex: '#4f46e5' },
 ];
 
 const morningAnsi = [
   { name: 'black',   hex: '#343b58', bright: '#6172af' },
   { name: 'red',     hex: '#d6197a', bright: '#d6197a' },
-  { name: 'green',   hex: '#2e8a4e', bright: '#2e8a4e' },
-  { name: 'yellow',  hex: '#b08900', bright: '#b08900' },
-  { name: 'blue',    hex: '#506dba', bright: '#506dba' },
-  { name: 'magenta', hex: '#8c19b1', bright: '#8c19b1' },
-  { name: 'cyan',    hex: '#1a8fa1', bright: '#1a8fa1' },
+  { name: 'green',   hex: '#16864a', bright: '#16864a' },
+  { name: 'yellow',  hex: '#c49000', bright: '#c49000' },
+  { name: 'blue',    hex: '#4f46e5', bright: '#4f46e5' },
+  { name: 'magenta', hex: '#7928a8', bright: '#7928a8' },
+  { name: 'cyan',    hex: '#0891b2', bright: '#0891b2' },
   { name: 'white',   hex: '#c8c9d1', bright: '#343b58' },
 ];
 
@@ -591,16 +591,16 @@ function renderCode(container, theme) {
   const n = theme === 'nights';
   const c = {
     kw:      n ? '#f92aad' : '#d6197a',
-    fn:      n ? '#e0b401' : '#b08900',
-    str:     n ? '#54e484' : '#2e8a4e',
-    typ:     n ? '#58c7e0' : '#1a8fa1',
+    fn:      n ? '#e0b401' : '#c49000',
+    str:     n ? '#54e484' : '#16864a',
+    typ:     n ? '#58c7e0' : '#0891b2',
     var_:    n ? '#c0caf5' : '#343b58',
-    num:     n ? '#ff9e64' : '#c4600a',
+    num:     n ? '#ff9e64' : '#d9580a',
     comment: n ? '#6071cc' : '#8b8fa0',
-    op:      n ? '#89ddff' : '#506dba',
-    purple:  n ? '#b141f1' : '#8c19b1',
-    prop:    n ? '#7dcfff' : '#2b6cb0',
-    teal:    n ? '#73daca' : '#1a7a6d',
+    op:      n ? '#89ddff' : '#4f46e5',
+    purple:  n ? '#b141f1' : '#7928a8',
+    prop:    n ? '#7dcfff' : '#2563eb',
+    teal:    n ? '#73daca' : '#0d9488',
   };
 
   const s = (color, text, style) => {
