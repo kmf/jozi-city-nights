@@ -532,6 +532,9 @@
       <div class="tool-category">Apps</div>
       <div class="tools-grid" id="tools-apps"></div>
 
+      <div class="tool-category">Desktop</div>
+      <div class="tools-grid" id="tools-desktop"></div>
+
       <div class="tool-category">Dev tools</div>
       <div class="tools-grid" id="tools-devtools"></div>
     </section>
@@ -577,6 +580,15 @@
         <br>
         <div><span class="com"># lazygit — merge into ~/.config/lazygit/config.yml</span></div>
         <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">tools/lazygit/jozi-nights.yml</span> <span class="arg">~/.config/lazygit/</span></div>
+        <br>
+        <div><span class="com"># zed</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">editors/zed/jozi-city-nights.json</span> <span class="arg">~/.config/zed/themes/</span></div>
+        <br>
+        <div><span class="com"># cosmic desktop</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">desktop/cosmic/jozi-nights.ron</span> <span class="arg">~/.config/cosmic/com.system76.CosmicTheme.Dark/v1/Theme</span></div>
+        <br>
+        <div><span class="com"># cosmic-term</span></div>
+        <div><span class="prompt">$</span> <span class="com"># import via cosmic-term > View > Color schemes > Import</span></div>
       </div>
       <div style="margin-top: 0.75rem; font-size: 0.75rem; color: var(--jcn-fg-muted);">
         Replace <strong style="color: var(--jcn-teal);">jozi-nights</strong> with <strong style="color: var(--jcn-teal);">jozi-morning</strong> for the light variant.
@@ -720,9 +732,14 @@
     ],
     editors: [
       { name: 'VS Code', variants: 'nights · morning', format: 'json' },
+      { name: 'Zed',     variants: 'nights · morning', format: 'json' },
     ],
     apps: [
       { name: 'Claude Code', variants: 'nights', format: 'json' },
+    ],
+    desktop: [
+      { name: 'COSMIC',  variants: 'nights · morning', format: 'ron' },
+      { name: 'DMS',     variants: 'nights · morning', format: 'json' },
     ],
     devtools: [
       { name: 'btop',    variants: 'nights · morning', format: 'theme' },
@@ -802,6 +819,7 @@
   renderTools('tools-terminals', tools.terminals);
   renderTools('tools-editors',   tools.editors);
   renderTools('tools-apps',      tools.apps);
+  renderTools('tools-desktop',   tools.desktop);
   renderTools('tools-devtools',  tools.devtools);
 
   /* ================================================================

@@ -1,0 +1,44 @@
+// jozi-nights color scheme for cosmic-term
+// https://github.com/kmf/jozi-city-nights
+//
+// Install:
+//   1. Open cosmic-term
+//   2. View > Color schemes...
+//   3. Click Import, select this file
+//   4. View > Color schemes > jozi-nights
+
+(
+    name: "jozi-nights",
+    foreground: Some("#a9b1d6"),
+    background: Some("#1b1e2e"),
+    cursor: Some("#f92aad"),
+    bright_foreground: Some("#c0caf5"),
+    dim_foreground: Some("#8089b3"),
+
+    black: Some("#414868"),
+    red: Some("#f92aad"),
+    green: Some("#54e484"),
+    yellow: Some("#e0b401"),
+    blue: Some("#7aa2f7"),
+    magenta: Some("#b141f1"),
+    cyan: Some("#58c7e0"),
+    white: Some("#a9b1d6"),
+
+    bright_black: Some("#545c7e"),
+    bright_red: Some("#f92aad"),
+    bright_green: Some("#54e484"),
+    bright_yellow: Some("#e0b401"),
+    bright_blue: Some("#7aa2f7"),
+    bright_magenta: Some("#b141f1"),
+    bright_cyan: Some("#58c7e0"),
+    bright_white: Some("#c0caf5"),
+
+    dim_black: Some("#2f334d"),
+    dim_red: Some("#c7228a"),
+    dim_green: Some("#43b66a"),
+    dim_yellow: Some("#b39001"),
+    dim_blue: Some("#6282c6"),
+    dim_magenta: Some("#8e34c1"),
+    dim_cyan: Some("#469fb3"),
+    dim_white: Some("#8089b3"),
+)

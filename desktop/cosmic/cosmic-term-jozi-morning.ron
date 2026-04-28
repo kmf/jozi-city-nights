@@ -1,0 +1,38 @@
+// jozi-morning color scheme for cosmic-term
+// https://github.com/kmf/jozi-city-nights
+
+(
+    name: "jozi-morning",
+    foreground: Some("#343b58"),
+    background: Some("#d5d6db"),
+    cursor: Some("#d6197a"),
+    bright_foreground: Some("#1f2335"),
+    dim_foreground: Some("#6172af"),
+
+    black: Some("#343b58"),
+    red: Some("#d6197a"),
+    green: Some("#16864a"),
+    yellow: Some("#c49000"),
+    blue: Some("#4f46e5"),
+    magenta: Some("#7928a8"),
+    cyan: Some("#0891b2"),
+    white: Some("#c8c9d1"),
+
+    bright_black: Some("#6172af"),
+    bright_red: Some("#d6197a"),
+    bright_green: Some("#16864a"),
+    bright_yellow: Some("#c49000"),
+    bright_blue: Some("#4f46e5"),
+    bright_magenta: Some("#7928a8"),
+    bright_cyan: Some("#0891b2"),
+    bright_white: Some("#343b58"),
+
+    dim_black: Some("#4a5070"),
+    dim_red: Some("#ab1462"),
+    dim_green: Some("#126b3b"),
+    dim_yellow: Some("#9d7300"),
+    dim_blue: Some("#3f38b8"),
+    dim_magenta: Some("#612086"),
+    dim_cyan: Some("#06748e"),
+    dim_white: Some("#9699a3"),
+)

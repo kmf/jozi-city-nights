@@ -162,8 +162,9 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 | Category | Tools |
 |---|---|
 | Terminals | Ghostty · Alacritty · Kitty · WezTerm · iTerm2 · foot · Windows Terminal |
-| Editors | VS Code |
+| Editors | VS Code · Zed |
 | Apps | Claude Code |
+| Desktop | COSMIC · DMS |
 | Dev tools | btop · fzf · k9s · lazygit · tmux |
 
 ## Install
@@ -185,6 +186,9 @@ git clone https://github.com/kmf/jozi-city-nights ~/.local/share/jozi-city-night
 - **fzf** → `source ~/.local/share/jozi-city-nights/tools/fzf/jozi-nights.sh`
 - **btop** → `cp tools/btop/jozi-nights.theme ~/.config/btop/themes/`
 - **k9s** → `cp tools/k9s/jozi-nights.yaml ~/.config/k9s/skins/`
+- **Zed** → `cp editors/zed/jozi-city-nights.json ~/.config/zed/themes/`
+- **COSMIC** → `cp desktop/cosmic/jozi-nights.ron ~/.config/cosmic/com.system76.CosmicTheme.Dark/v1/Theme`
+- **cosmic-term** → Import `desktop/cosmic/cosmic-term-jozi-nights.ron` via View > Color schemes
 
 Replace `jozi-nights` with `jozi-morning` for the light variant.
 
