@@ -485,7 +485,7 @@
         "support.variable.property"
       ],
       "settings": {
-        "foreground": "#1a8fa1"
+        "foreground": "#2b6cb0"
       }
     },
     {
@@ -507,7 +507,7 @@
         "keyword.control.from"
       ],
       "settings": {
-        "foreground": "#1a8fa1"
+        "foreground": "#2b6cb0"
       }
     },
     {
@@ -774,7 +774,7 @@
         "variable.other.positional.shell"
       ],
       "settings": {
-        "foreground": "#1a8fa1"
+        "foreground": "#2b6cb0"
       }
     },
     {
@@ -880,8 +880,8 @@
     "variable": "#343b58",
     "variable.readonly": "#b08900",
     "parameter": { "foreground": "#c4600a", "italic": true },
-    "property": "#1a8fa1",
-    "property.readonly": "#1a8fa1",
+    "property": "#2b6cb0",
+    "property.readonly": "#2b6cb0",
     "decorator": { "foreground": "#b08900", "italic": true },
     "event": "#c4600a",
     "comment": { "foreground": "#8b8fa0", "italic": true },
