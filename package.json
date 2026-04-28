@@ -1,0 +1,43 @@
+{
+  "name": "jozi-city-nights",
+  "displayName": "Jozi City Nights",
+  "description": "A muted storm backdrop meets synthwave neon — two modes for Johannesburg's restless energy",
+  "version": "0.1.0",
+  "publisher": "obsidian",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Jozi City Nights",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jozi-city-nights-color-theme.json"
+      },
+      {
+        "label": "Jozi City Morning",
+        "uiTheme": "vs",
+        "path": "./themes/jozi-city-morning-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmf/jozi-city-nights"
+  },
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark",
+    "light",
+    "synthwave",
+    "tokyo-night",
+    "jozi",
+    "johannesburg",
+    "neon"
+  ]
+}
