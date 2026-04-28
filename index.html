@@ -176,6 +176,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
   }
+
   @media (max-width: 700px) {
     .variants { grid-template-columns: 1fr; }
   }
@@ -211,31 +212,31 @@
     background: #24283b;
     color: #a9b1d6;
   }
-  .preview-nights .kw { color: #f92aad; font-weight: 700; }
-  .preview-nights .str { color: #54e484; }
-  .preview-nights .typ { color: #58c7e0; }
-  .preview-nights .fn { color: #e0b401; }
-  .preview-nights .prop { color: #7dcfff; }
-  .preview-nights .num { color: #ff9e64; }
-  .preview-nights .op { color: #89ddff; }
-  .preview-nights .cmt { color: #6071cc; font-style: italic; }
-  .preview-nights .teal { color: #73daca; }
-  .preview-nights .pur { color: #b141f1; }
+  .preview-nights .k { color: #f92aad; font-weight: 700; }
+  .preview-nights .s { color: #54e484; }
+  .preview-nights .n { color: #ff9e64; }
+  .preview-nights .f { color: #e0b401; }
+  .preview-nights .t { color: #58c7e0; }
+  .preview-nights .p { color: #7dcfff; }
+  .preview-nights .v { color: #b141f1; }
+  .preview-nights .o { color: #89ddff; }
+  .preview-nights .tl { color: #73daca; }
+  .preview-nights .c { color: #6071cc; font-style: italic; }
 
   .preview-morning {
     background: #d5d6db;
     color: #343b58;
   }
-  .preview-morning .kw { color: #d6197a; font-weight: 700; }
-  .preview-morning .str { color: #16864a; }
-  .preview-morning .typ { color: #0891b2; }
-  .preview-morning .fn { color: #c49000; }
-  .preview-morning .prop { color: #2563eb; }
-  .preview-morning .num { color: #d9580a; }
-  .preview-morning .op { color: #4f46e5; }
-  .preview-morning .cmt { color: #8b8fa0; font-style: italic; }
-  .preview-morning .teal { color: #0d9488; }
-  .preview-morning .pur { color: #7928a8; }
+  .preview-morning .k { color: #d6197a; font-weight: 700; }
+  .preview-morning .s { color: #16864a; }
+  .preview-morning .n { color: #d9580a; }
+  .preview-morning .f { color: #c49000; }
+  .preview-morning .t { color: #0891b2; }
+  .preview-morning .p { color: #2563eb; }
+  .preview-morning .v { color: #7928a8; }
+  .preview-morning .o { color: #4f46e5; }
+  .preview-morning .tl { color: #0d9488; }
+  .preview-morning .c { color: #8b8fa0; font-style: italic; }
 
   /* ---------- palette grid ---------- */
   .palette {
@@ -249,7 +250,10 @@
     border-radius: 6px;
     overflow: hidden;
     background: var(--jcn-bg-soft);
+    cursor: pointer;
+    transition: border-color 0.15s ease;
   }
+  .swatch:hover { border-color: var(--jcn-fg-muted); }
 
   .swatch-color {
     height: 52px;
@@ -263,7 +267,7 @@
   .swatch-role { color: var(--jcn-fg); font-weight: 500; }
   .swatch-hex { color: var(--jcn-fg-muted); font-size: 0.64rem; }
 
-  /* neutral ramp */
+  /* neutral ramp — compact horizontal strip */
   .ramp {
     display: flex;
     border: 1px solid var(--jcn-border);
@@ -308,7 +312,10 @@
     background: var(--jcn-bg-soft);
     transition: border-color 0.15s ease;
   }
-  .tool-card:hover { border-color: var(--jcn-fg-muted); }
+
+  .tool-card:hover {
+    border-color: var(--jcn-fg-muted);
+  }
 
   .tool-name {
     font-size: 0.85rem;
@@ -347,7 +354,7 @@
   .install .flag { color: var(--jcn-teal); }
   .install .com { color: var(--jcn-fg-muted); font-style: italic; }
 
-  /* ---------- about quote ---------- */
+  /* ---------- demo quote ---------- */
   .quote {
     background: var(--jcn-bg-soft);
     border-left: 3px solid var(--jcn-pink);
@@ -363,6 +370,27 @@
     margin-top: 0.75rem;
     color: var(--jcn-fg-muted);
     font-size: 0.75rem;
+  }
+
+  /* ---------- toast ---------- */
+  .toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--jcn-bg-soft);
+    border: 1px solid var(--jcn-pink);
+    color: var(--jcn-fg);
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
   }
 
   /* ---------- footer ---------- */
@@ -388,6 +416,9 @@
 
   <div class="container">
 
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
     <div class="hero">
       <div class="wordmark">jozi city <span class="accent">nights</span><span class="cursor"></span></div>
       <div class="tagline">
@@ -401,16 +432,22 @@
       </div>
     </div>
 
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
     <section>
       <h2><span class="prompt">$</span> <span class="cmd">cat</span> about.md</h2>
       <div class="quote">
         <strong>jozi city nights</strong> — a colour scheme born from Johannesburg after dark. The quiet blue-grey of a storm rolling over the Highveld, lit up by the electric energy of the city that never sleeps.<br><br>
         Muted storm backgrounds from <strong>Tokyo Night Storm</strong> — deep navies and blue-greys that stay out of your way. Syntax highlighting pulls from the <strong>synthwave</strong> palette: hot pinks, neon greens, electric purples. The feeling is excitement against calm — neon signs reflected in wet tarmac.<br><br>
-        <strong>nights</strong> is the dark roast. <strong>morning</strong> is the light — same energy, the storm has passed, the city wakes up.
+        <strong>nights</strong> is the dark variant. <strong>morning</strong> is the light — same energy, the storm has passed, the city wakes up.
         <span class="attrib">// kmf · johannesburg · 2026</span>
       </div>
     </section>
 
+    <!-- ============================================================
+         VARIANTS
+         ============================================================ -->
     <section>
       <h2><span class="prompt">$</span> <span class="cmd">ls</span> variants/</h2>
       <div class="variants">
@@ -420,16 +457,18 @@
             <div class="variant-desc">dark · storm blue #24283b</div>
           </div>
           <div class="variant-preview preview-nights">
-            <div><span class="cmt">// skyline.ts — the city after dark</span></div>
-            <div><span class="kw">import</span> <span class="op">{</span> neon<span class="op">,</span> storm <span class="op">}</span> <span class="prop">from</span> <span class="str">'@jozi/palette'</span></div>
+            <div><span class="c">// skyline.ts — the city after dark</span></div>
+            <div><span class="k">import</span> <span class="o">{</span> neon<span class="o">,</span> storm <span class="o">}</span> <span class="p">from</span> <span class="s">"@jozi/palette"</span></div>
             <br>
-            <div><span class="kw">interface</span> <span class="typ">CityTheme</span> <span class="op">{</span></div>
-            <div>&nbsp;&nbsp;<span class="teal">name</span><span class="op">:</span> <span class="typ">string</span></div>
-            <div>&nbsp;&nbsp;<span class="teal">mode</span><span class="op">:</span> <span class="str">'nights'</span> <span class="op">|</span> <span class="str">'morning'</span></div>
-            <div><span class="op">}</span></div>
+            <div><span class="k">type</span> <span class="t">CityTheme</span> <span class="k">struct</span> <span class="o">{</span></div>
+            <div>&nbsp;&nbsp;<span class="tl">Name</span>&nbsp;&nbsp;&nbsp;<span class="k">string</span></div>
+            <div>&nbsp;&nbsp;<span class="tl">Mode</span>&nbsp;&nbsp;&nbsp;<span class="k">string</span></div>
+            <div>&nbsp;&nbsp;<span class="tl">Glow</span>&nbsp;&nbsp;&nbsp;<span class="v">float64</span></div>
+            <div><span class="o">}</span></div>
             <br>
-            <div><span class="kw">const</span> <span class="fn">glow</span> <span class="op">=</span> <span class="op">(</span>intensity<span class="op">:</span> <span class="typ">number</span> <span class="op">=</span> <span class="num">0.85</span><span class="op">)</span> <span class="op">=&gt;</span></div>
-            <div>&nbsp;&nbsp;<span class="fn">neon</span><span class="op">(</span>storm<span class="op">.</span><span class="prop">palette</span><span class="op">,</span> intensity<span class="op">)</span></div>
+            <div><span class="k">func</span> <span class="f">ignite</span><span class="o">(</span>t <span class="t">CityTheme</span><span class="o">)</span> <span class="o">{</span></div>
+            <div>&nbsp;&nbsp;t<span class="o">.</span><span class="p">Glow</span> <span class="o">=</span> <span class="n">0.85</span></div>
+            <div><span class="o">}</span></div>
           </div>
         </div>
 
@@ -439,21 +478,26 @@
             <div class="variant-desc">light · storm grey #d5d6db</div>
           </div>
           <div class="variant-preview preview-morning">
-            <div><span class="cmt">// skyline.ts — the city after dark</span></div>
-            <div><span class="kw">import</span> <span class="op">{</span> neon<span class="op">,</span> storm <span class="op">}</span> <span class="prop">from</span> <span class="str">'@jozi/palette'</span></div>
+            <div><span class="c">// skyline.ts — the city after dark</span></div>
+            <div><span class="k">import</span> <span class="o">{</span> neon<span class="o">,</span> storm <span class="o">}</span> <span class="p">from</span> <span class="s">"@jozi/palette"</span></div>
             <br>
-            <div><span class="kw">interface</span> <span class="typ">CityTheme</span> <span class="op">{</span></div>
-            <div>&nbsp;&nbsp;<span class="teal">name</span><span class="op">:</span> <span class="typ">string</span></div>
-            <div>&nbsp;&nbsp;<span class="teal">mode</span><span class="op">:</span> <span class="str">'nights'</span> <span class="op">|</span> <span class="str">'morning'</span></div>
-            <div><span class="op">}</span></div>
+            <div><span class="k">type</span> <span class="t">CityTheme</span> <span class="k">struct</span> <span class="o">{</span></div>
+            <div>&nbsp;&nbsp;<span class="tl">Name</span>&nbsp;&nbsp;&nbsp;<span class="k">string</span></div>
+            <div>&nbsp;&nbsp;<span class="tl">Mode</span>&nbsp;&nbsp;&nbsp;<span class="k">string</span></div>
+            <div>&nbsp;&nbsp;<span class="tl">Glow</span>&nbsp;&nbsp;&nbsp;<span class="v">float64</span></div>
+            <div><span class="o">}</span></div>
             <br>
-            <div><span class="kw">const</span> <span class="fn">glow</span> <span class="op">=</span> <span class="op">(</span>intensity<span class="op">:</span> <span class="typ">number</span> <span class="op">=</span> <span class="num">0.85</span><span class="op">)</span> <span class="op">=&gt;</span></div>
-            <div>&nbsp;&nbsp;<span class="fn">neon</span><span class="op">(</span>storm<span class="op">.</span><span class="prop">palette</span><span class="op">,</span> intensity<span class="op">)</span></div>
+            <div><span class="k">func</span> <span class="f">ignite</span><span class="o">(</span>t <span class="t">CityTheme</span><span class="o">)</span> <span class="o">{</span></div>
+            <div>&nbsp;&nbsp;t<span class="o">.</span><span class="p">Glow</span> <span class="o">=</span> <span class="n">0.85</span></div>
+            <div><span class="o">}</span></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ============================================================
+         PALETTE — FULL
+         ============================================================ -->
     <section>
       <h2><span class="prompt">$</span> <span class="cmd">palette</span> --all</h2>
 
@@ -473,6 +517,9 @@
       <div class="palette" id="palette-ui"></div>
     </section>
 
+    <!-- ============================================================
+         SUPPORTED TOOLS
+         ============================================================ -->
     <section>
       <h2><span class="prompt">$</span> <span class="cmd">ls</span> themes/</h2>
 
@@ -489,6 +536,9 @@
       <div class="tools-grid" id="tools-devtools"></div>
     </section>
 
+    <!-- ============================================================
+         INSTALL
+         ============================================================ -->
     <section>
       <h2><span class="prompt">$</span> <span class="cmd">git clone</span> jozi-city-nights</h2>
       <div class="install">
@@ -516,9 +566,6 @@
         <div><span class="com"># tmux</span></div>
         <div><span class="prompt">$</span> <span class="cmd">source-file</span> <span class="arg">~/.local/share/jozi-city-nights/tools/tmux/jozi-nights.tmux</span></div>
         <br>
-        <div><span class="com"># bat</span></div>
-        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">tools/bat/jozi-nights.tmTheme</span> <span class="arg">~/.config/bat/themes/</span> <span class="flag">&amp;&amp;</span> <span class="cmd">bat cache</span> <span class="flag">--build</span></div>
-        <br>
         <div><span class="com"># fzf</span></div>
         <div><span class="prompt">$</span> <span class="cmd">source</span> <span class="arg">~/.local/share/jozi-city-nights/tools/fzf/jozi-nights.sh</span></div>
         <br>
@@ -528,11 +575,11 @@
         <div><span class="com"># k9s</span></div>
         <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">tools/k9s/jozi-nights.yaml</span> <span class="arg">~/.config/k9s/skins/</span></div>
         <br>
-        <div><span class="com"># lazygit</span></div>
-        <div><span class="prompt">$</span> <span class="com"># merge tools/lazygit/jozi-nights.yml into ~/.config/lazygit/config.yml</span></div>
+        <div><span class="com"># lazygit — merge into ~/.config/lazygit/config.yml</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">tools/lazygit/jozi-nights.yml</span> <span class="arg">~/.config/lazygit/</span></div>
       </div>
       <div style="margin-top: 0.75rem; font-size: 0.75rem; color: var(--jcn-fg-muted);">
-        Replace <strong>jozi-nights</strong> with <strong>jozi-morning</strong> for the light variant. See each directory for full instructions.
+        Replace <strong style="color: var(--jcn-teal);">jozi-nights</strong> with <strong style="color: var(--jcn-teal);">jozi-morning</strong> for the light variant.
       </div>
     </section>
 
@@ -540,12 +587,17 @@
 
   <footer>
     <div class="container">
-      // <span class="accent">jozi city nights</span> · backgrounds derived from <a href="https://github.com/tokyo-night/tokyo-night-vscode-theme">tokyo night storm</a> (MIT) · syntax palette inspired by <a href="https://github.com/victoriadrake/kabukicho-vscode">kabukicho</a> (MIT)<br>
+      // <span class="accent">jozi city nights</span> · backgrounds derived from <a href="https://github.com/tokyo-night/tokyo-night-vscode-theme">tokyo night storm</a> (MIT) · syntax inspired by <a href="https://github.com/victoriadrake/kabukicho-vscode">kabukicho</a> (MIT)<br>
       // built by kmf in johannesburg · 2026 · <a href="https://github.com/kmf/jozi-city-nights">github.com/kmf/jozi-city-nights</a>
     </div>
   </footer>
 
+  <div class="toast" id="toast">copied</div>
+
 <script>
+  /* ================================================================
+     PALETTE DATA — matches palette.json exactly
+     ================================================================ */
   const data = {
     'jozi-nights': {
       neutrals: [
@@ -653,6 +705,9 @@
     },
   };
 
+  /* ================================================================
+     SUPPORTED TOOLS
+     ================================================================ */
   const tools = {
     terminals: [
       { name: 'Ghostty',          variants: 'nights · morning', format: 'conf' },
@@ -678,12 +733,25 @@
     ],
   };
 
+  /* ================================================================
+     RENDER HELPERS
+     ================================================================ */
+  function showToast(text) {
+    var t = document.getElementById('toast');
+    t.textContent = text;
+    t.classList.add('show');
+    setTimeout(function() { t.classList.remove('show'); }, 1500);
+  }
+
   function renderSwatches(containerId, items) {
-    const el = document.getElementById(containerId);
+    var el = document.getElementById(containerId);
     el.innerHTML = '';
-    items.forEach(c => {
-      const div = document.createElement('div');
+    items.forEach(function(c) {
+      var div = document.createElement('div');
       div.className = 'swatch';
+      div.onclick = function() {
+        navigator.clipboard.writeText(c.hex).then(function() { showToast('copied ' + c.hex); });
+      };
       div.innerHTML =
         '<div class="swatch-color" style="background:' + c.hex + '"></div>' +
         '<div class="swatch-meta">' +
@@ -695,10 +763,10 @@
   }
 
   function renderRamp(containerId, colors) {
-    const el = document.getElementById(containerId);
+    var el = document.getElementById(containerId);
     el.innerHTML = '';
     colors.forEach(function(hex, i) {
-      const step = document.createElement('div');
+      var step = document.createElement('div');
       step.className = 'ramp-step';
       step.style.background = hex;
       step.setAttribute('data-label', i + ' ' + hex);
@@ -707,10 +775,10 @@
   }
 
   function renderTools(containerId, list) {
-    const el = document.getElementById(containerId);
+    var el = document.getElementById(containerId);
     el.innerHTML = '';
     list.forEach(function(t) {
-      const card = document.createElement('div');
+      var card = document.createElement('div');
       card.className = 'tool-card';
       card.innerHTML =
         '<div class="tool-name">' + t.name + '</div>' +
@@ -720,7 +788,7 @@
   }
 
   function renderAll(mode) {
-    const d = data[mode];
+    var d = data[mode];
     renderSwatches('palette-neutrals', d.neutrals);
     renderSwatches('palette-accents', d.accents);
     renderSwatches('palette-ansi', d.ansi);
@@ -728,13 +796,19 @@
     renderSwatches('palette-ui', d.ui);
   }
 
+  /* ================================================================
+     TOOLS — render once (static)
+     ================================================================ */
   renderTools('tools-terminals', tools.terminals);
   renderTools('tools-editors',   tools.editors);
   renderTools('tools-apps',      tools.apps);
   renderTools('tools-devtools',  tools.devtools);
 
-  const btnNights  = document.getElementById('btn-nights');
-  const btnMorning = document.getElementById('btn-morning');
+  /* ================================================================
+     THEME TOGGLE
+     ================================================================ */
+  var btnNights  = document.getElementById('btn-nights');
+  var btnMorning = document.getElementById('btn-morning');
 
   btnNights.addEventListener('click', function() {
     document.documentElement.removeAttribute('data-theme');
