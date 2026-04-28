@@ -1,0 +1,58 @@
+# jozi-morning — jozi city nights
+# https://github.com/kmf/jozi-city-nights
+
+[colors.primary]
+background = "#d5d6db"
+foreground = "#343b58"
+
+[colors.cursor]
+cursor = "#d6197a"
+text = "#d5d6db"
+
+[colors.vi_mode_cursor]
+cursor = "#0d9488"
+text = "#d5d6db"
+
+[colors.selection]
+background = "#bfc1cc"
+text = "#1f2335"
+
+[colors.search.matches]
+background = "#c49000"
+foreground = "#d5d6db"
+
+[colors.search.focused_match]
+background = "#d9580a"
+foreground = "#d5d6db"
+
+[colors.hints.start]
+background = "#c49000"
+foreground = "#d5d6db"
+
+[colors.hints.end]
+background = "#6172af"
+foreground = "#d5d6db"
+
+[colors.footer_bar]
+background = "#c8c9d1"
+foreground = "#343b58"
+
+[colors.normal]
+black = "#343b58"
+red = "#d6197a"
+green = "#16864a"
+yellow = "#c49000"
+blue = "#4f46e5"
+magenta = "#7928a8"
+cyan = "#0891b2"
+white = "#c8c9d1"
+
+[colors.bright]
+black = "#6172af"
+red = "#d6197a"
+green = "#16864a"
+yellow = "#c49000"
+blue = "#4f46e5"
+magenta = "#7928a8"
+cyan = "#0891b2"
+white = "#343b58"

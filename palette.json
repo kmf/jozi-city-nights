@@ -1,0 +1,129 @@
+{
+  "name": "Jozi City Nights",
+  "version": "0.1.0",
+  "tagline": "muted storm backdrop, neon synthwave syntax",
+  "author": "kmf",
+  "license": "MIT",
+  "variants": {
+    "jozi-nights": {
+      "type": "dark",
+      "neutrals": {
+        "bg":       "#1b1e2e",
+        "bg_soft":  "#1f2335",
+        "bg_hi":    "#24283b",
+        "border":   "#3b4261",
+        "fg":       "#a9b1d6",
+        "fg_alt":   "#c0caf5",
+        "fg_muted": "#8089b3"
+      },
+      "neutral_ramp": [
+        "#1b1e2e",
+        "#1f2335",
+        "#24283b",
+        "#292e42",
+        "#3b4261",
+        "#545c7e",
+        "#8089b3",
+        "#a9b1d6",
+        "#c0caf5"
+      ],
+      "accents": {
+        "pink":       "#f92aad",
+        "purple":     "#b141f1",
+        "blue":       "#7aa2f7",
+        "sky":        "#7dcfff",
+        "cyan":       "#58c7e0",
+        "teal":       "#73daca",
+        "mint":       "#b4f9f8",
+        "green":      "#54e484",
+        "yellow":     "#e0b401",
+        "orange":     "#ff9e64",
+        "ice":        "#89ddff"
+      },
+      "ansi": {
+        "black":          "#414868",
+        "red":            "#f92aad",
+        "green":          "#54e484",
+        "yellow":         "#e0b401",
+        "blue":           "#7aa2f7",
+        "magenta":        "#b141f1",
+        "cyan":           "#58c7e0",
+        "white":          "#a9b1d6",
+        "bright_black":   "#545c7e",
+        "bright_red":     "#f92aad",
+        "bright_green":   "#54e484",
+        "bright_yellow":  "#e0b401",
+        "bright_blue":    "#7aa2f7",
+        "bright_magenta": "#b141f1",
+        "bright_cyan":    "#58c7e0",
+        "bright_white":   "#c0caf5"
+      },
+      "ui": {
+        "cursor":       "#f92aad",
+        "cursor_text":  "#1b1e2e",
+        "selection_bg": "#6f7bb640",
+        "selection_fg": "#c0caf5"
+      }
+    },
+    "jozi-morning": {
+      "type": "light",
+      "neutrals": {
+        "bg":       "#d5d6db",
+        "bg_soft":  "#c8c9d1",
+        "bg_hi":    "#bfc1cc",
+        "border":   "#b0b3be",
+        "fg":       "#343b58",
+        "fg_alt":   "#1f2335",
+        "fg_muted": "#6172af"
+      },
+      "neutral_ramp": [
+        "#1f2335",
+        "#343b58",
+        "#6172af",
+        "#9699a3",
+        "#b0b3be",
+        "#bfc1cc",
+        "#c8c9d1",
+        "#d5d6db",
+        "#e1e2e7"
+      ],
+      "accents": {
+        "pink":       "#d6197a",
+        "purple":     "#7928a8",
+        "blue":       "#4f46e5",
+        "sky":        "#2563eb",
+        "cyan":       "#0891b2",
+        "teal":       "#0d9488",
+        "mint":       "#0e7490",
+        "green":      "#16864a",
+        "yellow":     "#c49000",
+        "orange":     "#d9580a",
+        "ice":        "#4f46e5"
+      },
+      "ansi": {
+        "black":          "#343b58",
+        "red":            "#d6197a",
+        "green":          "#16864a",
+        "yellow":         "#c49000",
+        "blue":           "#4f46e5",
+        "magenta":        "#7928a8",
+        "cyan":           "#0891b2",
+        "white":          "#c8c9d1",
+        "bright_black":   "#6172af",
+        "bright_red":     "#d6197a",
+        "bright_green":   "#16864a",
+        "bright_yellow":  "#c49000",
+        "bright_blue":    "#4f46e5",
+        "bright_magenta": "#7928a8",
+        "bright_cyan":    "#0891b2",
+        "bright_white":   "#343b58"
+      },
+      "ui": {
+        "cursor":       "#d6197a",
+        "cursor_text":  "#d5d6db",
+        "selection_bg": "#6172af30",
+        "selection_fg": "#1f2335"
+      }
+    }
+  }
+}

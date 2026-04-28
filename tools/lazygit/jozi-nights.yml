@@ -1,0 +1,30 @@
+# jozi-nights — jozi city nights
+# https://github.com/kmf/jozi-city-nights
+
+gui:
+  theme:
+    activeBorderColor:
+      - "#f92aad"
+      - bold
+    inactiveBorderColor:
+      - "#3b4261"
+    searchingActiveBorderColor:
+      - "#e0b401"
+    optionsTextColor:
+      - "#7aa2f7"
+    selectedLineBgColor:
+      - "#24283b"
+    inactiveViewSelectedLineBgColor:
+      - "#1f2335"
+    cherryPickedCommitFgColor:
+      - "#1b1e2e"
+    cherryPickedCommitBgColor:
+      - "#b141f1"
+    markedBaseCommitFgColor:
+      - "#1b1e2e"
+    markedBaseCommitBgColor:
+      - "#e0b401"
+    unstagedChangesColor:
+      - "#f92aad"
+    defaultFgColor:
+      - "#a9b1d6"

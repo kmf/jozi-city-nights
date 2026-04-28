@@ -1,0 +1,26 @@
+# jozi-nights — jozi city nights
+# https://github.com/kmf/jozi-city-nights
+
+background = 1b1e2e
+foreground = a9b1d6
+cursor-color = f92aad
+cursor-text = 1b1e2e
+selection-background = 292e42
+selection-foreground = c0caf5
+
+palette = 0=#414868
+palette = 1=#f92aad
+palette = 2=#54e484
+palette = 3=#e0b401
+palette = 4=#7aa2f7
+palette = 5=#b141f1
+palette = 6=#58c7e0
+palette = 7=#a9b1d6
+palette = 8=#545c7e
+palette = 9=#f92aad
+palette = 10=#54e484
+palette = 11=#e0b401
+palette = 12=#7aa2f7
+palette = 13=#b141f1
+palette = 14=#58c7e0
+palette = 15=#c0caf5

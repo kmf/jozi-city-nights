@@ -1,0 +1,95 @@
+# jozi-morning — jozi city nights
+# https://github.com/kmf/jozi-city-nights
+
+k9s:
+  body:
+    fgColor: "#343b58"
+    bgColor: "#d5d6db"
+    logoColor: "#d6197a"
+  prompt:
+    fgColor: "#343b58"
+    bgColor: "#d5d6db"
+    suggestColor: "#7928a8"
+  info:
+    fgColor: "#d6197a"
+    sectionColor: "#343b58"
+  dialog:
+    fgColor: "#343b58"
+    bgColor: "#c8c9d1"
+    buttonFgColor: "#d5d6db"
+    buttonBgColor: "#d6197a"
+    buttonFocusFgColor: "#d5d6db"
+    buttonFocusBgColor: "#7928a8"
+    labelFgColor: "#d9580a"
+    fieldFgColor: "#343b58"
+  frame:
+    border:
+      fgColor: "#b0b3be"
+      focusColor: "#d6197a"
+    menu:
+      fgColor: "#343b58"
+      keyColor: "#d6197a"
+      numKeyColor: "#7928a8"
+    crumbs:
+      fgColor: "#d5d6db"
+      bgColor: "#d6197a"
+      activeColor: "#7928a8"
+    status:
+      newColor: "#16864a"
+      modifyColor: "#c49000"
+      addColor: "#0d9488"
+      pendingColor: "#d9580a"
+      errorColor: "#d6197a"
+      highlightColor: "#4f46e5"
+      killColor: "#6172af"
+      completedColor: "#6172af"
+    title:
+      fgColor: "#d6197a"
+      bgColor: "#d5d6db"
+      highlightColor: "#7928a8"
+      counterColor: "#4f46e5"
+      filterColor: "#16864a"
+  views:
+    charts:
+      bgColor: "#d5d6db"
+      defaultDialColor:
+        - "#d6197a"
+        - "#7928a8"
+      defaultChartColor:
+        - "#4f46e5"
+        - "#16864a"
+      resourceColors:
+        cpu:
+          - "#d6197a"
+          - "#7928a8"
+        mem:
+          - "#4f46e5"
+          - "#16864a"
+    table:
+      fgColor: "#343b58"
+      bgColor: "#d5d6db"
+      cursorFgColor: "#d5d6db"
+      cursorBgColor: "#d6197a"
+      markColor: "#c49000"
+      header:
+        fgColor: "#6172af"
+        bgColor: "#d5d6db"
+        sorterColor: "#4f46e5"
+    xray:
+      fgColor: "#343b58"
+      bgColor: "#d5d6db"
+      cursorColor: "#d6197a"
+      cursorTextColor: "#d5d6db"
+      graphicColor: "#7928a8"
+    yaml:
+      keyColor: "#d6197a"
+      colonColor: "#b0b3be"
+      valueColor: "#343b58"
+    logs:
+      fgColor: "#343b58"
+      bgColor: "#d5d6db"
+      indicator:
+        fgColor: "#d6197a"
+        bgColor: "#d5d6db"
+        toggleOnColor: "#16864a"
+        toggleOffColor: "#6172af"

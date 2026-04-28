@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jozi city nights · muted storm backdrop, neon synthwave syntax</title>
+<meta name="description" content="A colorscheme born from Johannesburg after dark — muted storm backdrop with neon synthwave syntax. Two variants: jozi-nights (dark) and jozi-morning (light). Themes for terminals, editors, dev tools, and apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --jcn-bg:        #1b1e2e;
+    --jcn-bg-soft:   #1f2335;
+    --jcn-bg-hi:     #24283b;
+    --jcn-border:    #3b4261;
+    --jcn-fg:        #a9b1d6;
+    --jcn-fg-alt:    #c0caf5;
+    --jcn-fg-muted:  #8089b3;
+    --jcn-pink:      #f92aad;
+    --jcn-purple:    #b141f1;
+    --jcn-blue:      #7aa2f7;
+    --jcn-sky:       #7dcfff;
+    --jcn-cyan:      #58c7e0;
+    --jcn-teal:      #73daca;
+    --jcn-green:     #54e484;
+    --jcn-yellow:    #e0b401;
+    --jcn-orange:    #ff9e64;
+    --jcn-ice:       #89ddff;
+    --jcn-mint:      #b4f9f8;
+  }
+
+  [data-theme="jozi-morning"] {
+    --jcn-bg:        #d5d6db;
+    --jcn-bg-soft:   #c8c9d1;
+    --jcn-bg-hi:     #bfc1cc;
+    --jcn-border:    #b0b3be;
+    --jcn-fg:        #343b58;
+    --jcn-fg-alt:    #1f2335;
+    --jcn-fg-muted:  #6172af;
+    --jcn-pink:      #d6197a;
+    --jcn-purple:    #7928a8;
+    --jcn-blue:      #4f46e5;
+    --jcn-sky:       #2563eb;
+    --jcn-cyan:      #0891b2;
+    --jcn-teal:      #0d9488;
+    --jcn-green:     #16864a;
+    --jcn-yellow:    #c49000;
+    --jcn-orange:    #d9580a;
+    --jcn-ice:       #4f46e5;
+    --jcn-mint:      #0e7490;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Monaco, 'Cascadia Mono', monospace;
+    background: var(--jcn-bg);
+    color: var(--jcn-fg);
+    padding: 3rem 1.5rem 2rem;
+    min-height: 100vh;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .container { max-width: 920px; margin: 0 auto; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--jcn-border);
+  }
+
+  .wordmark {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: var(--jcn-fg);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .wordmark .accent { color: var(--jcn-pink); }
+  .wordmark .cursor {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.9em;
+    background: var(--jcn-pink);
+    margin-left: 0.1em;
+    animation: blink 1.2s steps(2) infinite;
+    vertical-align: -0.05em;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .tagline {
+    color: var(--jcn-fg-muted);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .tagline .em { color: var(--jcn-fg); }
+  .tagline .slash { color: var(--jcn-pink); }
+
+  .meta-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: var(--jcn-fg-muted);
+  }
+  .meta-row span strong { color: var(--jcn-teal); font-weight: 500; }
+
+  /* ---------- toggle ---------- */
+  .toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.4rem;
+    background: var(--jcn-bg-soft);
+    border: 1px solid var(--jcn-border);
+    border-radius: 6px;
+    padding: 0.25rem;
+    z-index: 100;
+  }
+
+  .toggle button {
+    background: transparent;
+    border: none;
+    color: var(--jcn-fg-muted);
+    font-family: inherit;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .toggle button.active {
+    background: var(--jcn-bg-hi);
+    color: var(--jcn-pink);
+  }
+
+  /* ---------- section ---------- */
+  section { margin-bottom: 3rem; }
+
+  h2 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--jcn-fg);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--jcn-border);
+  }
+  h2 .prompt { color: var(--jcn-pink); }
+  h2 .cmd { color: var(--jcn-blue); }
+
+  h3.palette-group {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--jcn-fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 1.5rem 0 0.75rem;
+  }
+  h3.palette-group:first-of-type { margin-top: 0; }
+
+  /* ---------- variant cards ---------- */
+  .variants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  @media (max-width: 700px) {
+    .variants { grid-template-columns: 1fr; }
+  }
+
+  .variant {
+    border: 1px solid var(--jcn-border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .variant-header {
+    padding: 1rem 1.25rem;
+    background: var(--jcn-bg-soft);
+    border-bottom: 1px solid var(--jcn-border);
+  }
+
+  .variant-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--jcn-fg);
+    margin-bottom: 0.25rem;
+  }
+  .variant-name .hash { color: var(--jcn-pink); }
+  .variant-desc { color: var(--jcn-fg-muted); font-size: 0.8rem; }
+
+  .variant-preview {
+    padding: 1.25rem;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+
+  .preview-nights {
+    background: #24283b;
+    color: #a9b1d6;
+  }
+  .preview-nights .kw { color: #f92aad; font-weight: 700; }
+  .preview-nights .str { color: #54e484; }
+  .preview-nights .typ { color: #58c7e0; }
+  .preview-nights .fn { color: #e0b401; }
+  .preview-nights .prop { color: #7dcfff; }
+  .preview-nights .num { color: #ff9e64; }
+  .preview-nights .op { color: #89ddff; }
+  .preview-nights .cmt { color: #6071cc; font-style: italic; }
+  .preview-nights .teal { color: #73daca; }
+  .preview-nights .pur { color: #b141f1; }
+
+  .preview-morning {
+    background: #d5d6db;
+    color: #343b58;
+  }
+  .preview-morning .kw { color: #d6197a; font-weight: 700; }
+  .preview-morning .str { color: #16864a; }
+  .preview-morning .typ { color: #0891b2; }
+  .preview-morning .fn { color: #c49000; }
+  .preview-morning .prop { color: #2563eb; }
+  .preview-morning .num { color: #d9580a; }
+  .preview-morning .op { color: #4f46e5; }
+  .preview-morning .cmt { color: #8b8fa0; font-style: italic; }
+  .preview-morning .teal { color: #0d9488; }
+  .preview-morning .pur { color: #7928a8; }
+
+  /* ---------- palette grid ---------- */
+  .palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .swatch {
+    border: 1px solid var(--jcn-border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--jcn-bg-soft);
+  }
+
+  .swatch-color {
+    height: 52px;
+    border-bottom: 1px solid var(--jcn-border);
+  }
+
+  .swatch-meta {
+    padding: 0.35rem 0.5rem;
+    font-size: 0.68rem;
+  }
+  .swatch-role { color: var(--jcn-fg); font-weight: 500; }
+  .swatch-hex { color: var(--jcn-fg-muted); font-size: 0.64rem; }
+
+  /* neutral ramp */
+  .ramp {
+    display: flex;
+    border: 1px solid var(--jcn-border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .ramp-step {
+    flex: 1;
+    height: 48px;
+    position: relative;
+    cursor: default;
+  }
+
+  .ramp-step:hover::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.62rem;
+    color: var(--jcn-fg-muted);
+    white-space: nowrap;
+    background: var(--jcn-bg-soft);
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    border: 1px solid var(--jcn-border);
+    z-index: 10;
+  }
+
+  /* ---------- tools grid ---------- */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .tool-card {
+    border: 1px solid var(--jcn-border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    background: var(--jcn-bg-soft);
+    transition: border-color 0.15s ease;
+  }
+  .tool-card:hover { border-color: var(--jcn-fg-muted); }
+
+  .tool-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--jcn-fg);
+    margin-bottom: 0.2rem;
+  }
+
+  .tool-meta {
+    font-size: 0.7rem;
+    color: var(--jcn-fg-muted);
+  }
+
+  .tool-category {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--jcn-fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 1.5rem 0 0.75rem;
+  }
+  .tool-category:first-of-type { margin-top: 0; }
+
+  /* ---------- install block ---------- */
+  .install {
+    background: var(--jcn-bg-soft);
+    border: 1px solid var(--jcn-border);
+    border-radius: 8px;
+    padding: 1.25rem;
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+  .install .prompt { color: var(--jcn-pink); }
+  .install .cmd { color: var(--jcn-fg); }
+  .install .arg { color: var(--jcn-green); }
+  .install .flag { color: var(--jcn-teal); }
+  .install .com { color: var(--jcn-fg-muted); font-style: italic; }
+
+  /* ---------- about quote ---------- */
+  .quote {
+    background: var(--jcn-bg-soft);
+    border-left: 3px solid var(--jcn-pink);
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--jcn-fg-alt);
+  }
+  .quote strong { color: var(--jcn-pink); font-weight: 500; }
+  .quote .attrib {
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--jcn-fg-muted);
+    font-size: 0.75rem;
+  }
+
+  /* ---------- footer ---------- */
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--jcn-border);
+    color: var(--jcn-fg-muted);
+    font-size: 0.75rem;
+    line-height: 1.8;
+  }
+  footer .accent { color: var(--jcn-pink); }
+  footer a { color: var(--jcn-blue); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <div class="toggle">
+    <button id="btn-nights" class="active">nights</button>
+    <button id="btn-morning">morning</button>
+  </div>
+
+  <div class="container">
+
+    <div class="hero">
+      <div class="wordmark">jozi city <span class="accent">nights</span><span class="cursor"></span></div>
+      <div class="tagline">
+        <span class="slash">//</span> <span class="em">muted storm backdrop, neon synthwave syntax.</span>
+      </div>
+      <div class="meta-row">
+        <span>version <strong>0.1</strong></span>
+        <span>license <strong>MIT</strong></span>
+        <span>variants <strong>nights</strong> · <strong>morning</strong></span>
+        <span>lineage <strong>tokyo night storm + kabukicho</strong></span>
+      </div>
+    </div>
+
+    <section>
+      <h2><span class="prompt">$</span> <span class="cmd">cat</span> about.md</h2>
+      <div class="quote">
+        <strong>jozi city nights</strong> — a colour scheme born from Johannesburg after dark. The quiet blue-grey of a storm rolling over the Highveld, lit up by the electric energy of the city that never sleeps.<br><br>
+        Muted storm backgrounds from <strong>Tokyo Night Storm</strong> — deep navies and blue-greys that stay out of your way. Syntax highlighting pulls from the <strong>synthwave</strong> palette: hot pinks, neon greens, electric purples. The feeling is excitement against calm — neon signs reflected in wet tarmac.<br><br>
+        <strong>nights</strong> is the dark roast. <strong>morning</strong> is the light — same energy, the storm has passed, the city wakes up.
+        <span class="attrib">// kmf · johannesburg · 2026</span>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="prompt">$</span> <span class="cmd">ls</span> variants/</h2>
+      <div class="variants">
+        <div class="variant">
+          <div class="variant-header">
+            <div class="variant-name"><span class="hash">#</span> jozi-nights</div>
+            <div class="variant-desc">dark · storm blue #24283b</div>
+          </div>
+          <div class="variant-preview preview-nights">
+            <div><span class="cmt">// skyline.ts — the city after dark</span></div>
+            <div><span class="kw">import</span> <span class="op">{</span> neon<span class="op">,</span> storm <span class="op">}</span> <span class="prop">from</span> <span class="str">'@jozi/palette'</span></div>
+            <br>
+            <div><span class="kw">interface</span> <span class="typ">CityTheme</span> <span class="op">{</span></div>
+            <div>&nbsp;&nbsp;<span class="teal">name</span><span class="op">:</span> <span class="typ">string</span></div>
+            <div>&nbsp;&nbsp;<span class="teal">mode</span><span class="op">:</span> <span class="str">'nights'</span> <span class="op">|</span> <span class="str">'morning'</span></div>
+            <div><span class="op">}</span></div>
+            <br>
+            <div><span class="kw">const</span> <span class="fn">glow</span> <span class="op">=</span> <span class="op">(</span>intensity<span class="op">:</span> <span class="typ">number</span> <span class="op">=</span> <span class="num">0.85</span><span class="op">)</span> <span class="op">=&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="fn">neon</span><span class="op">(</span>storm<span class="op">.</span><span class="prop">palette</span><span class="op">,</span> intensity<span class="op">)</span></div>
+          </div>
+        </div>
+
+        <div class="variant">
+          <div class="variant-header">
+            <div class="variant-name"><span class="hash">#</span> jozi-morning</div>
+            <div class="variant-desc">light · storm grey #d5d6db</div>
+          </div>
+          <div class="variant-preview preview-morning">
+            <div><span class="cmt">// skyline.ts — the city after dark</span></div>
+            <div><span class="kw">import</span> <span class="op">{</span> neon<span class="op">,</span> storm <span class="op">}</span> <span class="prop">from</span> <span class="str">'@jozi/palette'</span></div>
+            <br>
+            <div><span class="kw">interface</span> <span class="typ">CityTheme</span> <span class="op">{</span></div>
+            <div>&nbsp;&nbsp;<span class="teal">name</span><span class="op">:</span> <span class="typ">string</span></div>
+            <div>&nbsp;&nbsp;<span class="teal">mode</span><span class="op">:</span> <span class="str">'nights'</span> <span class="op">|</span> <span class="str">'morning'</span></div>
+            <div><span class="op">}</span></div>
+            <br>
+            <div><span class="kw">const</span> <span class="fn">glow</span> <span class="op">=</span> <span class="op">(</span>intensity<span class="op">:</span> <span class="typ">number</span> <span class="op">=</span> <span class="num">0.85</span><span class="op">)</span> <span class="op">=&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="fn">neon</span><span class="op">(</span>storm<span class="op">.</span><span class="prop">palette</span><span class="op">,</span> intensity<span class="op">)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="prompt">$</span> <span class="cmd">palette</span> --all</h2>
+
+      <h3 class="palette-group">Neutrals</h3>
+      <div class="palette" id="palette-neutrals"></div>
+
+      <h3 class="palette-group">Accents</h3>
+      <div class="palette" id="palette-accents"></div>
+
+      <h3 class="palette-group">ANSI</h3>
+      <div class="palette" id="palette-ansi"></div>
+
+      <h3 class="palette-group">Neutral ramp</h3>
+      <div class="ramp" id="palette-ramp" style="margin-bottom: 2rem;"></div>
+
+      <h3 class="palette-group">UI</h3>
+      <div class="palette" id="palette-ui"></div>
+    </section>
+
+    <section>
+      <h2><span class="prompt">$</span> <span class="cmd">ls</span> themes/</h2>
+
+      <div class="tool-category">Terminals</div>
+      <div class="tools-grid" id="tools-terminals"></div>
+
+      <div class="tool-category">Editors</div>
+      <div class="tools-grid" id="tools-editors"></div>
+
+      <div class="tool-category">Apps</div>
+      <div class="tools-grid" id="tools-apps"></div>
+
+      <div class="tool-category">Dev tools</div>
+      <div class="tools-grid" id="tools-devtools"></div>
+    </section>
+
+    <section>
+      <h2><span class="prompt">$</span> <span class="cmd">git clone</span> jozi-city-nights</h2>
+      <div class="install">
+        <div><span class="com"># clone the repo</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">git clone</span> <span class="arg">https://github.com/kmf/jozi-city-nights</span> <span class="arg">~/.local/share/jozi-city-nights</span></div>
+        <br>
+        <div><span class="com"># ghostty</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">terminals/ghostty/jozi-nights</span> <span class="arg">~/.config/ghostty/themes/</span></div>
+        <br>
+        <div><span class="com"># alacritty</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">terminals/alacritty/jozi-nights.toml</span> <span class="arg">~/.config/alacritty/themes/</span></div>
+        <br>
+        <div><span class="com"># kitty</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">terminals/kitty/jozi-nights.conf</span> <span class="arg">~/.config/kitty/themes/</span></div>
+        <br>
+        <div><span class="com"># wezterm</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">terminals/wezterm/jozi-nights.lua</span> <span class="arg">~/.config/wezterm/colors/</span></div>
+        <br>
+        <div><span class="com"># foot</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">terminals/foot/jozi-nights.ini</span> <span class="arg">~/.config/foot/</span></div>
+        <br>
+        <div><span class="com"># vs code</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp -r</span> <span class="arg">editors/vscode</span> <span class="arg">~/.vscode/extensions/jozi-city-nights</span></div>
+        <br>
+        <div><span class="com"># tmux</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">source-file</span> <span class="arg">~/.local/share/jozi-city-nights/tools/tmux/jozi-nights.tmux</span></div>
+        <br>
+        <div><span class="com"># bat</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">tools/bat/jozi-nights.tmTheme</span> <span class="arg">~/.config/bat/themes/</span> <span class="flag">&amp;&amp;</span> <span class="cmd">bat cache</span> <span class="flag">--build</span></div>
+        <br>
+        <div><span class="com"># fzf</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">source</span> <span class="arg">~/.local/share/jozi-city-nights/tools/fzf/jozi-nights.sh</span></div>
+        <br>
+        <div><span class="com"># btop</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">tools/btop/jozi-nights.theme</span> <span class="arg">~/.config/btop/themes/</span></div>
+        <br>
+        <div><span class="com"># k9s</span></div>
+        <div><span class="prompt">$</span> <span class="cmd">cp</span> <span class="arg">tools/k9s/jozi-nights.yaml</span> <span class="arg">~/.config/k9s/skins/</span></div>
+        <br>
+        <div><span class="com"># lazygit</span></div>
+        <div><span class="prompt">$</span> <span class="com"># merge tools/lazygit/jozi-nights.yml into ~/.config/lazygit/config.yml</span></div>
+      </div>
+      <div style="margin-top: 0.75rem; font-size: 0.75rem; color: var(--jcn-fg-muted);">
+        Replace <strong>jozi-nights</strong> with <strong>jozi-morning</strong> for the light variant. See each directory for full instructions.
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      // <span class="accent">jozi city nights</span> · backgrounds derived from <a href="https://github.com/tokyo-night/tokyo-night-vscode-theme">tokyo night storm</a> (MIT) · syntax palette inspired by <a href="https://github.com/victoriadrake/kabukicho-vscode">kabukicho</a> (MIT)<br>
+      // built by kmf in johannesburg · 2026 · <a href="https://github.com/kmf/jozi-city-nights">github.com/kmf/jozi-city-nights</a>
+    </div>
+  </footer>
+
+<script>
+  const data = {
+    'jozi-nights': {
+      neutrals: [
+        { role: 'bg',       hex: '#1b1e2e' },
+        { role: 'bg-soft',  hex: '#1f2335' },
+        { role: 'bg-hi',    hex: '#24283b' },
+        { role: 'border',   hex: '#3b4261' },
+        { role: 'fg',       hex: '#a9b1d6' },
+        { role: 'fg-alt',   hex: '#c0caf5' },
+        { role: 'fg-muted', hex: '#8089b3' },
+      ],
+      accents: [
+        { role: 'pink',    hex: '#f92aad' },
+        { role: 'purple',  hex: '#b141f1' },
+        { role: 'blue',    hex: '#7aa2f7' },
+        { role: 'sky',     hex: '#7dcfff' },
+        { role: 'cyan',    hex: '#58c7e0' },
+        { role: 'teal',    hex: '#73daca' },
+        { role: 'mint',    hex: '#b4f9f8' },
+        { role: 'green',   hex: '#54e484' },
+        { role: 'yellow',  hex: '#e0b401' },
+        { role: 'orange',  hex: '#ff9e64' },
+        { role: 'ice',     hex: '#89ddff' },
+      ],
+      ansi: [
+        { role: 'black',          hex: '#414868' },
+        { role: 'red',            hex: '#f92aad' },
+        { role: 'green',          hex: '#54e484' },
+        { role: 'yellow',         hex: '#e0b401' },
+        { role: 'blue',           hex: '#7aa2f7' },
+        { role: 'magenta',        hex: '#b141f1' },
+        { role: 'cyan',           hex: '#58c7e0' },
+        { role: 'white',          hex: '#a9b1d6' },
+        { role: 'bright_black',   hex: '#545c7e' },
+        { role: 'bright_red',     hex: '#f92aad' },
+        { role: 'bright_green',   hex: '#54e484' },
+        { role: 'bright_yellow',  hex: '#e0b401' },
+        { role: 'bright_blue',    hex: '#7aa2f7' },
+        { role: 'bright_magenta', hex: '#b141f1' },
+        { role: 'bright_cyan',    hex: '#58c7e0' },
+        { role: 'bright_white',   hex: '#c0caf5' },
+      ],
+      ramp: [
+        '#1b1e2e', '#1f2335', '#24283b', '#292e42', '#3b4261',
+        '#545c7e', '#8089b3', '#a9b1d6', '#c0caf5',
+      ],
+      ui: [
+        { role: 'cursor',       hex: '#f92aad' },
+        { role: 'cursor_text',  hex: '#1b1e2e' },
+        { role: 'selection_bg', hex: '#292e42' },
+        { role: 'selection_fg', hex: '#c0caf5' },
+      ],
+    },
+    'jozi-morning': {
+      neutrals: [
+        { role: 'bg',       hex: '#d5d6db' },
+        { role: 'bg-soft',  hex: '#c8c9d1' },
+        { role: 'bg-hi',    hex: '#bfc1cc' },
+        { role: 'border',   hex: '#b0b3be' },
+        { role: 'fg',       hex: '#343b58' },
+        { role: 'fg-alt',   hex: '#1f2335' },
+        { role: 'fg-muted', hex: '#6172af' },
+      ],
+      accents: [
+        { role: 'pink',    hex: '#d6197a' },
+        { role: 'purple',  hex: '#7928a8' },
+        { role: 'blue',    hex: '#4f46e5' },
+        { role: 'sky',     hex: '#2563eb' },
+        { role: 'cyan',    hex: '#0891b2' },
+        { role: 'teal',    hex: '#0d9488' },
+        { role: 'mint',    hex: '#0e7490' },
+        { role: 'green',   hex: '#16864a' },
+        { role: 'yellow',  hex: '#c49000' },
+        { role: 'orange',  hex: '#d9580a' },
+        { role: 'ice',     hex: '#4f46e5' },
+      ],
+      ansi: [
+        { role: 'black',          hex: '#343b58' },
+        { role: 'red',            hex: '#d6197a' },
+        { role: 'green',          hex: '#16864a' },
+        { role: 'yellow',         hex: '#c49000' },
+        { role: 'blue',           hex: '#4f46e5' },
+        { role: 'magenta',        hex: '#7928a8' },
+        { role: 'cyan',           hex: '#0891b2' },
+        { role: 'white',          hex: '#c8c9d1' },
+        { role: 'bright_black',   hex: '#6172af' },
+        { role: 'bright_red',     hex: '#d6197a' },
+        { role: 'bright_green',   hex: '#16864a' },
+        { role: 'bright_yellow',  hex: '#c49000' },
+        { role: 'bright_blue',    hex: '#4f46e5' },
+        { role: 'bright_magenta', hex: '#7928a8' },
+        { role: 'bright_cyan',    hex: '#0891b2' },
+        { role: 'bright_white',   hex: '#343b58' },
+      ],
+      ramp: [
+        '#1f2335', '#343b58', '#6172af', '#9699a3', '#b0b3be',
+        '#bfc1cc', '#c8c9d1', '#d5d6db', '#e1e2e7',
+      ],
+      ui: [
+        { role: 'cursor',       hex: '#d6197a' },
+        { role: 'cursor_text',  hex: '#d5d6db' },
+        { role: 'selection_bg', hex: '#bfc1cc' },
+        { role: 'selection_fg', hex: '#1f2335' },
+      ],
+    },
+  };
+
+  const tools = {
+    terminals: [
+      { name: 'Ghostty',          variants: 'nights · morning', format: 'conf' },
+      { name: 'Alacritty',        variants: 'nights · morning', format: 'toml' },
+      { name: 'Kitty',            variants: 'nights · morning', format: 'conf' },
+      { name: 'WezTerm',          variants: 'nights · morning', format: 'lua' },
+      { name: 'iTerm2',           variants: 'nights · morning', format: 'itermcolors' },
+      { name: 'foot',             variants: 'nights · morning', format: 'ini' },
+      { name: 'Windows Terminal', variants: 'nights · morning', format: 'json' },
+    ],
+    editors: [
+      { name: 'VS Code', variants: 'nights · morning', format: 'json' },
+    ],
+    apps: [
+      { name: 'Claude Code', variants: 'nights', format: 'json' },
+    ],
+    devtools: [
+      { name: 'btop',    variants: 'nights · morning', format: 'theme' },
+      { name: 'fzf',     variants: 'nights · morning', format: 'sh' },
+      { name: 'k9s',     variants: 'nights · morning', format: 'yaml' },
+      { name: 'lazygit', variants: 'nights · morning', format: 'yml' },
+      { name: 'tmux',    variants: 'nights · morning', format: 'tmux' },
+    ],
+  };
+
+  function renderSwatches(containerId, items) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    items.forEach(c => {
+      const div = document.createElement('div');
+      div.className = 'swatch';
+      div.innerHTML =
+        '<div class="swatch-color" style="background:' + c.hex + '"></div>' +
+        '<div class="swatch-meta">' +
+          '<div class="swatch-role">' + c.role + '</div>' +
+          '<div class="swatch-hex">' + c.hex + '</div>' +
+        '</div>';
+      el.appendChild(div);
+    });
+  }
+
+  function renderRamp(containerId, colors) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    colors.forEach(function(hex, i) {
+      const step = document.createElement('div');
+      step.className = 'ramp-step';
+      step.style.background = hex;
+      step.setAttribute('data-label', i + ' ' + hex);
+      el.appendChild(step);
+    });
+  }
+
+  function renderTools(containerId, list) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    list.forEach(function(t) {
+      const card = document.createElement('div');
+      card.className = 'tool-card';
+      card.innerHTML =
+        '<div class="tool-name">' + t.name + '</div>' +
+        '<div class="tool-meta">' + t.variants + ' · ' + t.format + '</div>';
+      el.appendChild(card);
+    });
+  }
+
+  function renderAll(mode) {
+    const d = data[mode];
+    renderSwatches('palette-neutrals', d.neutrals);
+    renderSwatches('palette-accents', d.accents);
+    renderSwatches('palette-ansi', d.ansi);
+    renderRamp('palette-ramp', d.ramp);
+    renderSwatches('palette-ui', d.ui);
+  }
+
+  renderTools('tools-terminals', tools.terminals);
+  renderTools('tools-editors',   tools.editors);
+  renderTools('tools-apps',      tools.apps);
+  renderTools('tools-devtools',  tools.devtools);
+
+  const btnNights  = document.getElementById('btn-nights');
+  const btnMorning = document.getElementById('btn-morning');
+
+  btnNights.addEventListener('click', function() {
+    document.documentElement.removeAttribute('data-theme');
+    btnNights.classList.add('active');
+    btnMorning.classList.remove('active');
+    renderAll('jozi-nights');
+  });
+
+  btnMorning.addEventListener('click', function() {
+    document.documentElement.setAttribute('data-theme', 'jozi-morning');
+    btnMorning.classList.add('active');
+    btnNights.classList.remove('active');
+    renderAll('jozi-morning');
+  });
+
+  renderAll('jozi-nights');
+</script>
+</body>
+</html>

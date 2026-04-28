@@ -1,0 +1,23 @@
+{
+  "name": "jozi-morning",
+  "background": "#D5D6DB",
+  "foreground": "#343B58",
+  "cursorColor": "#D6197A",
+  "selectionBackground": "#BFC1CC",
+  "black": "#343B58",
+  "red": "#D6197A",
+  "green": "#16864A",
+  "yellow": "#C49000",
+  "blue": "#4F46E5",
+  "purple": "#7928A8",
+  "cyan": "#0891B2",
+  "white": "#C8C9D1",
+  "brightBlack": "#6172AF",
+  "brightRed": "#D6197A",
+  "brightGreen": "#16864A",
+  "brightYellow": "#C49000",
+  "brightBlue": "#4F46E5",
+  "brightPurple": "#7928A8",
+  "brightCyan": "#0891B2",
+  "brightWhite": "#343B58"
+}

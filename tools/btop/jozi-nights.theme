@@ -1,0 +1,58 @@
+# jozi-nights — jozi city nights
+# https://github.com/kmf/jozi-city-nights
+
+# Main bg/fg
+theme[main_bg]="#1b1e2e"
+theme[main_fg]="#a9b1d6"
+theme[title]="#c0caf5"
+theme[hi_fg]="#f92aad"
+theme[selected_bg]="#24283b"
+theme[selected_fg]="#c0caf5"
+theme[inactive_fg]="#8089b3"
+theme[graph_text]="#8089b3"
+theme[meter_bg]="#3b4261"
+theme[proc_misc]="#7aa2f7"
+
+# Box borders
+theme[cpu_box]="#b141f1"
+theme[mem_box]="#54e484"
+theme[net_box]="#7aa2f7"
+theme[proc_box]="#f92aad"
+theme[div_line]="#3b4261"
+
+# Temperature graph gradients
+theme[temp_start]="#54e484"
+theme[temp_mid]="#e0b401"
+theme[temp_end]="#f92aad"
+
+# CPU graph gradients
+theme[cpu_start]="#54e484"
+theme[cpu_mid]="#e0b401"
+theme[cpu_end]="#f92aad"
+
+# Memory meters
+theme[free_start]="#73daca"
+theme[free_mid]="#58c7e0"
+theme[free_end]="#7aa2f7"
+theme[cached_start]="#7aa2f7"
+theme[cached_mid]="#b141f1"
+theme[cached_end]="#f92aad"
+theme[available_start]="#54e484"
+theme[available_mid]="#73daca"
+theme[available_end]="#58c7e0"
+theme[used_start]="#e0b401"
+theme[used_mid]="#ff9e64"
+theme[used_end]="#f92aad"
+
+# Network download/upload gradients
+theme[download_start]="#54e484"
+theme[download_mid]="#73daca"
+theme[download_end]="#7aa2f7"
+theme[upload_start]="#b141f1"
+theme[upload_mid]="#f92aad"
+theme[upload_end]="#ff9e64"
+
+# Process gradients
+theme[process_start]="#7aa2f7"
+theme[process_mid]="#b141f1"
+theme[process_end]="#f92aad"
