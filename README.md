@@ -3,9 +3,9 @@
 > muted storm backdrop, neon synthwave syntax.
 > tokyo night storm + kabukicho, brewed in johannesburg.
 
-A colorscheme born from Johannesburg after dark — the quiet blue-grey of a storm rolling over the Highveld, lit up by the electric energy of the city that never sleeps. Two variants — `jozi-nights` (dark) and `jozi-morning` (light) — with matching configs for every tool in your stack.
+A colorscheme born from Johannesburg after dark — the quiet blue-grey of a storm rolling over the Highveld, lit up by the electric energy of the city that never sleeps. Three variants — `jozi-nights` (dark), `jozi-morning` (light), and `jozi-midnight` (deepest dark) — with matching configs for every tool in your stack.
 
-**[kmf.github.io/jozi-city-nights](https://kmf.github.io/jozi-city-nights/)** — live palette preview with dark/light toggle.
+**[kmf.github.io/jozi-city-nights](https://kmf.github.io/jozi-city-nights/)** — live palette preview with nights/morning/midnight toggle.
 
 ## Palette
 
@@ -157,13 +157,73 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 | ![selection_bg](https://singlecolorimage.com/get/bfc1cc/16x16) | selection_bg | `#bfc1cc` |
 | ![selection_fg](https://singlecolorimage.com/get/1f2335/16x16) | selection_fg | `#1f2335` |
 
+### jozi-midnight (deepest dark)
+
+**Neutrals**
+
+| | Token | Hex |
+|---|---|---|
+| ![bg](https://singlecolorimage.com/get/101014/16x16) | bg | `#101014` |
+| ![bg_soft](https://singlecolorimage.com/get/16161e/16x16) | bg_soft | `#16161e` |
+| ![bg_hi](https://singlecolorimage.com/get/1a1b26/16x16) | bg_hi | `#1a1b26` |
+| ![border](https://singlecolorimage.com/get/232433/16x16) | border | `#232433` |
+| ![fg](https://singlecolorimage.com/get/a9b1d6/16x16) | fg | `#a9b1d6` |
+| ![fg_alt](https://singlecolorimage.com/get/c0caf5/16x16) | fg_alt | `#c0caf5` |
+| ![fg_muted](https://singlecolorimage.com/get/8089b3/16x16) | fg_muted | `#8089b3` |
+
+**Accents** — same as jozi-nights.
+
+**ANSI**
+
+| | Token | Hex |
+|---|---|---|
+| ![black](https://singlecolorimage.com/get/363b54/16x16) | black | `#363b54` |
+| ![red](https://singlecolorimage.com/get/f92aad/16x16) | red | `#f92aad` |
+| ![green](https://singlecolorimage.com/get/54e484/16x16) | green | `#54e484` |
+| ![yellow](https://singlecolorimage.com/get/e0b401/16x16) | yellow | `#e0b401` |
+| ![blue](https://singlecolorimage.com/get/7aa2f7/16x16) | blue | `#7aa2f7` |
+| ![magenta](https://singlecolorimage.com/get/b141f1/16x16) | magenta | `#b141f1` |
+| ![cyan](https://singlecolorimage.com/get/58c7e0/16x16) | cyan | `#58c7e0` |
+| ![white](https://singlecolorimage.com/get/a9b1d6/16x16) | white | `#a9b1d6` |
+| ![bright_black](https://singlecolorimage.com/get/515670/16x16) | bright_black | `#515670` |
+| ![bright_red](https://singlecolorimage.com/get/f92aad/16x16) | bright_red | `#f92aad` |
+| ![bright_green](https://singlecolorimage.com/get/54e484/16x16) | bright_green | `#54e484` |
+| ![bright_yellow](https://singlecolorimage.com/get/e0b401/16x16) | bright_yellow | `#e0b401` |
+| ![bright_blue](https://singlecolorimage.com/get/7aa2f7/16x16) | bright_blue | `#7aa2f7` |
+| ![bright_magenta](https://singlecolorimage.com/get/b141f1/16x16) | bright_magenta | `#b141f1` |
+| ![bright_cyan](https://singlecolorimage.com/get/58c7e0/16x16) | bright_cyan | `#58c7e0` |
+| ![bright_white](https://singlecolorimage.com/get/c0caf5/16x16) | bright_white | `#c0caf5` |
+
+**Neutral ramp**
+
+| | Index | Hex |
+|---|---|---|
+| ![0](https://singlecolorimage.com/get/101014/16x16) | 0 | `#101014` |
+| ![1](https://singlecolorimage.com/get/14141b/16x16) | 1 | `#14141b` |
+| ![2](https://singlecolorimage.com/get/16161e/16x16) | 2 | `#16161e` |
+| ![3](https://singlecolorimage.com/get/1a1b26/16x16) | 3 | `#1a1b26` |
+| ![4](https://singlecolorimage.com/get/232433/16x16) | 4 | `#232433` |
+| ![5](https://singlecolorimage.com/get/363b54/16x16) | 5 | `#363b54` |
+| ![6](https://singlecolorimage.com/get/515670/16x16) | 6 | `#515670` |
+| ![7](https://singlecolorimage.com/get/a9b1d6/16x16) | 7 | `#a9b1d6` |
+| ![8](https://singlecolorimage.com/get/c0caf5/16x16) | 8 | `#c0caf5` |
+
+**UI**
+
+| | Token | Hex |
+|---|---|---|
+| ![cursor](https://singlecolorimage.com/get/f92aad/16x16) | cursor | `#f92aad` |
+| ![cursor_text](https://singlecolorimage.com/get/101014/16x16) | cursor_text | `#101014` |
+| ![selection_bg](https://singlecolorimage.com/get/1e202e/16x16) | selection_bg | `#1e202e` |
+| ![selection_fg](https://singlecolorimage.com/get/c0caf5/16x16) | selection_fg | `#c0caf5` |
+
 ## What's included
 
 | Category | Tools |
 |---|---|
 | Terminals | Ghostty · Alacritty · Kitty · WezTerm · iTerm2 · foot · Windows Terminal |
 | Editors | VS Code · Zed |
-| Apps | Claude Code |
+| Apps | Claude Code · Obsidian |
 | Desktop | COSMIC · DMS |
 | Dev tools | btop · fzf · k9s · lazygit · tmux |
 
@@ -187,10 +247,13 @@ git clone https://github.com/kmf/jozi-city-nights ~/.local/share/jozi-city-night
 - **btop** → `cp tools/btop/jozi-nights.theme ~/.config/btop/themes/`
 - **k9s** → `cp tools/k9s/jozi-nights.yaml ~/.config/k9s/skins/`
 - **Zed** → `cp editors/zed/jozi-city-nights.json ~/.config/zed/themes/`
+- **Obsidian** → `cp -r apps/obsidian <vault>/.obsidian/themes/jozi-city-nights`
 - **COSMIC** → `cp desktop/cosmic/jozi-nights.ron ~/.config/cosmic/com.system76.CosmicTheme.Dark/v1/Theme`
 - **cosmic-term** → Import `desktop/cosmic/cosmic-term-jozi-nights.ron` via View > Color schemes
 
-Replace `jozi-nights` with `jozi-morning` for the light variant.
+Replace `jozi-nights` with `jozi-morning` for the light variant, or `jozi-midnight` for the deepest dark.
+
+For Obsidian midnight: copy `apps/obsidian/snippets/jozi-midnight.css` to `<vault>/.obsidian/snippets/` and enable it under Settings > Appearance > CSS snippets.
 
 ## Design
 
@@ -198,7 +261,7 @@ Jozi City Nights sits at the intersection of Tokyo Night Storm's restraint and s
 
 - **Muted storm backgrounds** — deep navy blue-greys from Tokyo Night Storm (`#1b1e2e`, `#1f2335`, `#24283b`) that stay out of your way
 - **Neon synthwave accents** — hot pink `#f92aad`, electric purple `#b141f1`, neon green `#54e484`, inspired by Kabukicho
-- **Two modes** — `nights` is the city after dark, `morning` is the same energy after the storm passes
+- **Three modes** — `nights` is the city after dark, `morning` is the same energy after the storm passes, `midnight` goes deeper with Tokyo Night's darkest backgrounds (`#101014`, `#16161e`, `#1a1b26`)
 
 The canonical palette is defined in [`palette.json`](./palette.json).
 
@@ -214,4 +277,4 @@ MIT.
 
 ---
 
-built by kmf in johannesburg · 2026
+built by kmf in pretoria · 2026

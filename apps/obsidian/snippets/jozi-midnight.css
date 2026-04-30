@@ -1,0 +1,49 @@
+/*
+ * jozi-midnight — deepest dark snippet for Obsidian
+ * https://github.com/kmf/jozi-city-nights
+ *
+ * Install:
+ *   Copy this file to your vault:
+ *     <vault>/.obsidian/snippets/jozi-midnight.css
+ *
+ *   Then: Settings > Appearance > CSS snippets > enable "jozi-midnight"
+ *
+ * Requires the Jozi City Nights theme to be active in dark mode.
+ * Overrides the nights backgrounds with Tokyo Night's deeper blacks.
+ */
+
+.theme-dark {
+  /* Background */
+  --background-primary:         #1a1b26;
+  --background-primary-alt:     #16161e;
+  --background-secondary:       #16161e;
+  --background-secondary-alt:   #101014;
+  --background-modifier-border: #232433;
+  --background-modifier-border-hover:  #363b54;
+  --background-modifier-border-focus:  #f92aad;
+  --background-modifier-hover:  #1e202e;
+  --background-modifier-active-hover: #232433;
+
+  /* Text — adjusted faint for deeper backgrounds */
+  --text-on-accent: #101014;
+  --text-faint:     #363b54;
+  --text-selection: #1e202e;
+
+  /* Interactive */
+  --interactive-normal:      #16161e;
+  --interactive-hover:       #1e202e;
+
+  /* Code / inline */
+  --code-background: #101014;
+
+  /* Tags */
+  --tag-background: #16161e;
+
+  /* Graph view */
+  --graph-line:        #232433;
+
+  /* Tables */
+  --table-border-color:     #232433;
+  --table-header-background:#16161e;
+  --table-row-alt-background:#101014;
+}

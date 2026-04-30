@@ -1,0 +1,204 @@
+/*
+ * jozi city nights — obsidian theme
+ * https://github.com/kmf/jozi-city-nights
+ *
+ * Install:
+ *   Copy this folder to your vault:
+ *     <vault>/.obsidian/themes/jozi-city-nights/
+ *
+ *   Then: Settings > Appearance > Themes > Manage... > pick "Jozi City Nights"
+ *
+ * Dark mode uses jozi-nights, light mode uses jozi-morning.
+ * For the deepest dark (jozi-midnight), add the CSS snippet from
+ * apps/obsidian/snippets/jozi-midnight.css
+ */
+
+/* ------------------------------------------------------------------
+   jozi-nights — dark theme
+   ------------------------------------------------------------------ */
+.theme-dark {
+  /* Background */
+  --background-primary:         #24283b;
+  --background-primary-alt:     #1f2335;
+  --background-secondary:       #1f2335;
+  --background-secondary-alt:   #1b1e2e;
+  --background-modifier-border: #3b4261;
+  --background-modifier-border-hover:  #545c7e;
+  --background-modifier-border-focus:  #f92aad;
+  --background-modifier-hover:  #292e42;
+  --background-modifier-active-hover: #3b4261;
+
+  /* Text */
+  --text-normal:    #a9b1d6;
+  --text-muted:     #8089b3;
+  --text-faint:     #545c7e;
+  --text-on-accent: #1b1e2e;
+  --text-accent:    #f92aad;
+  --text-accent-hover: #ff5cc2;
+  --text-error:     #f92aad;
+  --text-warning:   #ff9e64;
+  --text-success:   #54e484;
+  --text-selection: #292e42;
+  --text-highlight-bg:      #f92aad;
+  --text-highlight-fg:      #1b1e2e;
+
+  /* Interactive */
+  --interactive-normal:      #1f2335;
+  --interactive-hover:       #292e42;
+  --interactive-accent:      #f92aad;
+  --interactive-accent-hover:#ff5cc2;
+
+  /* Headings */
+  --h1-color: #f92aad;
+  --h2-color: #e0b401;
+  --h3-color: #7aa2f7;
+  --h4-color: #58c7e0;
+  --h5-color: #b141f1;
+  --h6-color: #8089b3;
+
+  /* Code / inline */
+  --code-background: #1b1e2e;
+  --code-normal:     #a9b1d6;
+  --code-comment:    #6071cc;
+  --code-function:   #e0b401;
+  --code-keyword:    #f92aad;
+  --code-operator:   #89ddff;
+  --code-property:   #7dcfff;
+  --code-punctuation:#8089b3;
+  --code-string:     #54e484;
+  --code-tag:        #f92aad;
+  --code-value:      #ff9e64;
+  --code-important:  #b141f1;
+
+  /* Links */
+  --link-color:           #58c7e0;
+  --link-color-hover:     #7dcfff;
+  --link-unresolved-color:#f92aad;
+  --link-external-color:  #b141f1;
+
+  /* Tags */
+  --tag-color:      #73daca;
+  --tag-background: #1f2335;
+
+  /* Callouts */
+  --callout-note:      122, 162, 247;   /* blue   */
+  --callout-info:      88,  199, 224;   /* cyan   */
+  --callout-success:   84,  228, 132;   /* green  */
+  --callout-warning:   255, 158, 100;   /* orange */
+  --callout-error:     249, 42,  173;   /* pink   */
+  --callout-question:  177, 65,  241;   /* purple */
+  --callout-quote:     128, 137, 179;   /* muted  */
+  --callout-important: 249, 42,  173;   /* pink   */
+  --callout-tip:       224, 180, 1;     /* yellow */
+
+  /* Graph view */
+  --graph-line:        #3b4261;
+  --graph-node:        #a9b1d6;
+  --graph-node-focused:#f92aad;
+  --graph-node-tag:    #73daca;
+  --graph-node-unresolved: #f92aad;
+  --graph-text:        #a9b1d6;
+
+  /* Tables */
+  --table-border-color:     #3b4261;
+  --table-header-background:#1f2335;
+  --table-row-alt-background:#1b1e2e;
+}
+
+/* ------------------------------------------------------------------
+   jozi-morning — light theme
+   ------------------------------------------------------------------ */
+.theme-light {
+  --background-primary:         #c8c9d1;
+  --background-primary-alt:     #bfc1cc;
+  --background-secondary:       #d5d6db;
+  --background-secondary-alt:   #b0b3be;
+  --background-modifier-border: #b0b3be;
+  --background-modifier-border-hover:  #9699a3;
+  --background-modifier-border-focus:  #d6197a;
+  --background-modifier-hover:  #bfc1cc;
+  --background-modifier-active-hover: #b0b3be;
+
+  --text-normal:    #343b58;
+  --text-muted:     #6172af;
+  --text-faint:     #9699a3;
+  --text-on-accent: #d5d6db;
+  --text-accent:    #d6197a;
+  --text-accent-hover: #c0156e;
+  --text-error:     #d6197a;
+  --text-warning:   #d9580a;
+  --text-success:   #16864a;
+  --text-selection: #bfc1cc;
+  --text-highlight-bg:      #d6197a;
+  --text-highlight-fg:      #d5d6db;
+
+  --interactive-normal:      #c8c9d1;
+  --interactive-hover:       #bfc1cc;
+  --interactive-accent:      #d6197a;
+  --interactive-accent-hover:#c0156e;
+
+  --h1-color: #d6197a;
+  --h2-color: #c49000;
+  --h3-color: #4f46e5;
+  --h4-color: #0891b2;
+  --h5-color: #7928a8;
+  --h6-color: #6172af;
+
+  --code-background: #d5d6db;
+  --code-normal:     #343b58;
+  --code-comment:    #6172af;
+  --code-function:   #c49000;
+  --code-keyword:    #d6197a;
+  --code-operator:   #4f46e5;
+  --code-property:   #2563eb;
+  --code-punctuation:#6172af;
+  --code-string:     #16864a;
+  --code-tag:        #d6197a;
+  --code-value:      #d9580a;
+  --code-important:  #7928a8;
+
+  --link-color:           #0891b2;
+  --link-color-hover:     #0e7490;
+  --link-unresolved-color:#d6197a;
+  --link-external-color:  #7928a8;
+
+  --tag-color:      #0d9488;
+  --tag-background: #c8c9d1;
+
+  --callout-note:      79, 70,  229;    /* blue   */
+  --callout-info:      8,  145, 178;    /* cyan   */
+  --callout-success:   22, 134, 74;     /* green  */
+  --callout-warning:   217, 88, 10;     /* orange */
+  --callout-error:     214, 25, 122;    /* pink   */
+  --callout-question:  121, 40, 168;    /* purple */
+  --callout-quote:     97,  114, 175;   /* muted  */
+  --callout-important: 214, 25, 122;    /* pink   */
+  --callout-tip:       196, 144, 0;     /* yellow */
+
+  --graph-line:        #b0b3be;
+  --graph-node:        #343b58;
+  --graph-node-focused:#d6197a;
+  --graph-node-tag:    #0d9488;
+  --graph-node-unresolved: #d6197a;
+  --graph-text:        #343b58;
+
+  --table-border-color:     #b0b3be;
+  --table-header-background:#d5d6db;
+  --table-row-alt-background:#c8c9d1;
+}
+
+/* ------------------------------------------------------------------
+   Optional refinements
+   ------------------------------------------------------------------ */
+.theme-dark blockquote { border-left: 3px solid var(--text-accent); }
+.theme-light blockquote { border-left: 3px solid var(--text-accent); }
+
+.theme-dark .cm-s-obsidian .cm-hmd-internal-link { color: var(--link-color); }
+.theme-light .cm-s-obsidian .cm-hmd-internal-link { color: var(--link-color); }
+
+.theme-dark .workspace-tab-header.is-active {
+  border-top: 2px solid var(--text-accent);
+}
+.theme-light .workspace-tab-header.is-active {
+  border-top: 2px solid var(--text-accent);
+}
