@@ -59,6 +59,27 @@
                 --jcn-mint: #0e7490;
             }
 
+            [data-theme="jozi-midnight"] {
+                --jcn-bg: #101014;
+                --jcn-bg-soft: #16161e;
+                --jcn-bg-hi: #1a1b26;
+                --jcn-border: #232433;
+                --jcn-fg: #a9b1d6;
+                --jcn-fg-alt: #c0caf5;
+                --jcn-fg-muted: #8089b3;
+                --jcn-pink: #f92aad;
+                --jcn-purple: #b141f1;
+                --jcn-blue: #7aa2f7;
+                --jcn-sky: #7dcfff;
+                --jcn-cyan: #58c7e0;
+                --jcn-teal: #73daca;
+                --jcn-green: #54e484;
+                --jcn-yellow: #e0b401;
+                --jcn-orange: #ff9e64;
+                --jcn-ice: #89ddff;
+                --jcn-mint: #b4f9f8;
+            }
+
             * {
                 box-sizing: border-box;
                 margin: 0;
@@ -215,11 +236,17 @@
             /* ---------- variant cards ---------- */
             .variants {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
                 gap: 1.25rem;
             }
 
-            @media (max-width: 700px) {
+            @media (max-width: 900px) {
+                .variants {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (max-width: 600px) {
                 .variants {
                     grid-template-columns: 1fr;
                 }
@@ -328,6 +355,43 @@
             }
             .preview-morning .c {
                 color: #8b8fa0;
+                font-style: italic;
+            }
+
+            .preview-midnight {
+                background: #1a1b26;
+                color: #a9b1d6;
+            }
+            .preview-midnight .k {
+                color: #f92aad;
+                font-weight: 700;
+            }
+            .preview-midnight .s {
+                color: #54e484;
+            }
+            .preview-midnight .n {
+                color: #ff9e64;
+            }
+            .preview-midnight .f {
+                color: #e0b401;
+            }
+            .preview-midnight .t {
+                color: #58c7e0;
+            }
+            .preview-midnight .p {
+                color: #7dcfff;
+            }
+            .preview-midnight .v {
+                color: #b141f1;
+            }
+            .preview-midnight .o {
+                color: #89ddff;
+            }
+            .preview-midnight .tl {
+                color: #73daca;
+            }
+            .preview-midnight .c {
+                color: #6071cc;
                 font-style: italic;
             }
 
@@ -535,6 +599,7 @@
         <div class="toggle">
             <button id="btn-nights" class="active">nights</button>
             <button id="btn-morning">morning</button>
+            <button id="btn-midnight">midnight</button>
         </div>
 
         <div class="container">
@@ -557,7 +622,8 @@
                     <span>license <strong>MIT</strong></span>
                     <span
                         >variants <strong>nights</strong> ·
-                        <strong>morning</strong></span
+                        <strong>morning</strong> ·
+                        <strong>midnight</strong></span
                     >
                     <span
                         >lineage
@@ -589,6 +655,10 @@
                     <strong>nights</strong> is the dark variant.
                     <strong>morning</strong> is the light — same energy, the
                     storm has passed, the city wakes up.
+                    <strong>midnight</strong> goes deeper — the city at its
+                    darkest, backgrounds from
+                    <strong>Tokyo Night</strong> proper, neon burning brighter
+                    against the void.
                     <span class="attrib">// kmf · pretoria · 2026</span>
                 </div>
             </section>
@@ -612,6 +682,71 @@
                             </div>
                         </div>
                         <div class="variant-preview preview-nights">
+                            <div>
+                                <span class="c"
+                                    >// skyline.ts — the city after dark</span
+                                >
+                            </div>
+                            <div>
+                                <span class="k">import</span>
+                                <span class="o">{</span> neon<span class="o"
+                                    >,</span
+                                >
+                                storm <span class="o">}</span>
+                                <span class="p">from</span>
+                                <span class="s">"@jozi/palette"</span>
+                            </div>
+                            <br />
+                            <div>
+                                <span class="k">type</span>
+                                <span class="t">CityTheme</span>
+                                <span class="k">struct</span>
+                                <span class="o">{</span>
+                            </div>
+                            <div>
+                                &nbsp;&nbsp;<span class="tl">Name</span
+                                >&nbsp;&nbsp;&nbsp;<span class="k">string</span>
+                            </div>
+                            <div>
+                                &nbsp;&nbsp;<span class="tl">Mode</span
+                                >&nbsp;&nbsp;&nbsp;<span class="k">string</span>
+                            </div>
+                            <div>
+                                &nbsp;&nbsp;<span class="tl">Glow</span
+                                >&nbsp;&nbsp;&nbsp;<span class="v"
+                                    >float64</span
+                                >
+                            </div>
+                            <div><span class="o">}</span></div>
+                            <br />
+                            <div>
+                                <span class="k">func</span>
+                                <span class="f">ignite</span
+                                ><span class="o">(</span>t
+                                <span class="t">CityTheme</span
+                                ><span class="o">)</span>
+                                <span class="o">{</span>
+                            </div>
+                            <div>
+                                &nbsp;&nbsp;t<span class="o">.</span
+                                ><span class="p">Glow</span>
+                                <span class="o">=</span>
+                                <span class="n">0.85</span>
+                            </div>
+                            <div><span class="o">}</span></div>
+                        </div>
+                    </div>
+
+                    <div class="variant">
+                        <div class="variant-header">
+                            <div class="variant-name">
+                                <span class="hash">#</span> jozi-midnight
+                            </div>
+                            <div class="variant-desc">
+                                dark · tokyo night #1a1b26
+                            </div>
+                        </div>
+                        <div class="variant-preview preview-midnight">
                             <div>
                                 <span class="c"
                                     >// skyline.ts — the city after dark</span
@@ -950,7 +1085,9 @@
                     <strong style="color: var(--jcn-teal)">jozi-nights</strong>
                     with
                     <strong style="color: var(--jcn-teal)">jozi-morning</strong>
-                    for the light variant.
+                    for the light variant or
+                    <strong style="color: var(--jcn-teal)">jozi-midnight</strong>
+                    for the deepest dark.
                 </div>
             </section>
         </div>
@@ -1038,6 +1175,65 @@
                         { role: "cursor", hex: "#f92aad" },
                         { role: "cursor_text", hex: "#1b1e2e" },
                         { role: "selection_bg", hex: "#292e42" },
+                        { role: "selection_fg", hex: "#c0caf5" },
+                    ],
+                },
+                "jozi-midnight": {
+                    neutrals: [
+                        { role: "bg", hex: "#101014" },
+                        { role: "bg-soft", hex: "#16161e" },
+                        { role: "bg-hi", hex: "#1a1b26" },
+                        { role: "border", hex: "#232433" },
+                        { role: "fg", hex: "#a9b1d6" },
+                        { role: "fg-alt", hex: "#c0caf5" },
+                        { role: "fg-muted", hex: "#8089b3" },
+                    ],
+                    accents: [
+                        { role: "pink", hex: "#f92aad" },
+                        { role: "purple", hex: "#b141f1" },
+                        { role: "blue", hex: "#7aa2f7" },
+                        { role: "sky", hex: "#7dcfff" },
+                        { role: "cyan", hex: "#58c7e0" },
+                        { role: "teal", hex: "#73daca" },
+                        { role: "mint", hex: "#b4f9f8" },
+                        { role: "green", hex: "#54e484" },
+                        { role: "yellow", hex: "#e0b401" },
+                        { role: "orange", hex: "#ff9e64" },
+                        { role: "ice", hex: "#89ddff" },
+                    ],
+                    ansi: [
+                        { role: "black", hex: "#363b54" },
+                        { role: "red", hex: "#f92aad" },
+                        { role: "green", hex: "#54e484" },
+                        { role: "yellow", hex: "#e0b401" },
+                        { role: "blue", hex: "#7aa2f7" },
+                        { role: "magenta", hex: "#b141f1" },
+                        { role: "cyan", hex: "#58c7e0" },
+                        { role: "white", hex: "#a9b1d6" },
+                        { role: "bright_black", hex: "#515670" },
+                        { role: "bright_red", hex: "#f92aad" },
+                        { role: "bright_green", hex: "#54e484" },
+                        { role: "bright_yellow", hex: "#e0b401" },
+                        { role: "bright_blue", hex: "#7aa2f7" },
+                        { role: "bright_magenta", hex: "#b141f1" },
+                        { role: "bright_cyan", hex: "#58c7e0" },
+                        { role: "bright_white", hex: "#c0caf5" },
+                    ],
+                    ramp: [
+                        "#101014",
+                        "#14141b",
+                        "#16161e",
+                        "#1a1b26",
+                        "#232433",
+                        "#363b54",
+                        "#515670",
+                        "#a9b1d6",
+                        "#c0caf5",
+                    ],
+                    ui: [
+                        { role: "cursor", hex: "#f92aad" },
+                        { role: "cursor_text", hex: "#101014" },
+                        { role: "selection_bg", hex: "#1e202e" },
                         { role: "selection_fg", hex: "#c0caf5" },
                     ],
                 },
@@ -1146,7 +1342,7 @@
                 editors: [
                     {
                         name: "VS Code",
-                        variants: "nights · morning",
+                        variants: "nights · morning · midnight",
                         format: "json",
                     },
                     {
@@ -1166,7 +1362,7 @@
                     },
                     {
                         name: "DMS",
-                        variants: "nights · morning",
+                        variants: "nights · morning · midnight",
                         format: "json",
                     },
                 ],
@@ -1288,22 +1484,35 @@
      ================================================================ */
             var btnNights = document.getElementById("btn-nights");
             var btnMorning = document.getElementById("btn-morning");
+            var btnMidnight = document.getElementById("btn-midnight");
+            var allBtns = [btnNights, btnMorning, btnMidnight];
+
+            function setTheme(theme, activeBtn) {
+                allBtns.forEach(function (b) {
+                    b.classList.remove("active");
+                });
+                activeBtn.classList.add("active");
+                if (theme === "jozi-nights") {
+                    document.documentElement.removeAttribute("data-theme");
+                } else {
+                    document.documentElement.setAttribute(
+                        "data-theme",
+                        theme,
+                    );
+                }
+                renderAll(theme);
+            }
 
             btnNights.addEventListener("click", function () {
-                document.documentElement.removeAttribute("data-theme");
-                btnNights.classList.add("active");
-                btnMorning.classList.remove("active");
-                renderAll("jozi-nights");
+                setTheme("jozi-nights", btnNights);
             });
 
             btnMorning.addEventListener("click", function () {
-                document.documentElement.setAttribute(
-                    "data-theme",
-                    "jozi-morning",
-                );
-                btnMorning.classList.add("active");
-                btnNights.classList.remove("active");
-                renderAll("jozi-morning");
+                setTheme("jozi-morning", btnMorning);
+            });
+
+            btnMidnight.addEventListener("click", function () {
+                setTheme("jozi-midnight", btnMidnight);
             });
 
             renderAll("jozi-nights");

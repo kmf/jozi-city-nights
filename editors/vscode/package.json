@@ -22,6 +22,11 @@
         "label": "Jozi City Morning",
         "uiTheme": "vs",
         "path": "./themes/jozi-city-morning-color-theme.json"
+      },
+      {
+        "label": "Jozi City Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jozi-city-midnight-color-theme.json"
       }
     ]
   },
