@@ -1,0 +1,23 @@
+{
+  "name": "jozi-midnight",
+  "background": "#101014",
+  "foreground": "#A9B1D6",
+  "cursorColor": "#F92AAD",
+  "selectionBackground": "#1E202E",
+  "black": "#363B54",
+  "red": "#F92AAD",
+  "green": "#54E484",
+  "yellow": "#E0B401",
+  "blue": "#7AA2F7",
+  "purple": "#B141F1",
+  "cyan": "#58C7E0",
+  "white": "#A9B1D6",
+  "brightBlack": "#515670",
+  "brightRed": "#F92AAD",
+  "brightGreen": "#54E484",
+  "brightYellow": "#E0B401",
+  "brightBlue": "#7AA2F7",
+  "brightPurple": "#B141F1",
+  "brightCyan": "#58C7E0",
+  "brightWhite": "#C0CAF5"
+}

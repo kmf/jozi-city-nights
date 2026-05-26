@@ -181,7 +181,7 @@
       "ui": {
         "cursor":       "#f92aad",
         "cursor_text":  "#101014",
-        "selection_bg": "#6f7bb640",
+        "selection_bg": "#1e202e",
         "selection_fg": "#c0caf5"
       }
     }
