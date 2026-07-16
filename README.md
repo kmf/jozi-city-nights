@@ -222,7 +222,7 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 | Category | Tools |
 |---|---|
 | Terminals | Ghostty · Alacritty · Kitty · WezTerm · iTerm2 · foot · Windows Terminal |
-| Editors | VS Code · Zed |
+| Editors | VS Code · Zed · Fresh |
 | Apps | Claude Code · Obsidian |
 | Desktop | COSMIC · DMS |
 | Dev tools | btop · fzf · k9s · lazygit · tmux |
@@ -247,6 +247,7 @@ git clone https://github.com/kmf/jozi-city-nights ~/.local/share/jozi-city-night
 - **btop** → `cp tools/btop/jozi-nights.theme ~/.config/btop/themes/`
 - **k9s** → `cp tools/k9s/jozi-nights.yaml ~/.config/k9s/skins/`
 - **Zed** → `cp editors/zed/jozi-city-nights.json ~/.config/zed/themes/`
+- **Fresh** → `cp editors/fresh/jozi-nights.json ~/.config/fresh/themes/`
 - **Obsidian** → `cp -r apps/obsidian <vault>/.obsidian/themes/jozi-city-nights`
 - **COSMIC** → `cp desktop/cosmic/jozi-nights.ron ~/.config/cosmic/com.system76.CosmicTheme.Dark/v1/Theme`
 - **cosmic-term** → Import `desktop/cosmic/cosmic-term-jozi-nights.ron` via View > Color schemes
