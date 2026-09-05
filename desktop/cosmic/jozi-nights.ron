@@ -29,21 +29,21 @@
         // accent slots
         accent_blue:   (red: 0.478, green: 0.635, blue: 0.969, alpha: 1.0),  // #7aa2f7
         accent_green:  (red: 0.329, green: 0.894, blue: 0.518, alpha: 1.0),  // #54e484
-        accent_indigo: (red: 0.694, green: 0.255, blue: 0.945, alpha: 1.0),  // #b141f1
+        accent_indigo: (red: 0.733, green: 0.345, blue: 0.953, alpha: 1.0),  // #bb58f3
         accent_orange: (red: 1.000, green: 0.620, blue: 0.392, alpha: 1.0),  // #ff9e64
         accent_pink:   (red: 0.976, green: 0.165, blue: 0.678, alpha: 1.0),  // #f92aad
-        accent_purple: (red: 0.694, green: 0.255, blue: 0.945, alpha: 1.0),  // #b141f1
+        accent_purple: (red: 0.733, green: 0.345, blue: 0.953, alpha: 1.0),  // #bb58f3
         accent_red:    (red: 0.976, green: 0.165, blue: 0.678, alpha: 1.0),  // #f92aad
-        accent_warm_grey: (red: 0.502, green: 0.537, blue: 0.702, alpha: 1.0), // #8089b3
+        accent_warm_grey: (red: 0.525, green: 0.557, blue: 0.718, alpha: 1.0),  // #868eb7
         accent_yellow: (red: 0.878, green: 0.706, blue: 0.004, alpha: 1.0),  // #e0b401
 
         // ext slots — cosmic-specific bright accents
         ext_blue:      (red: 0.490, green: 0.812, blue: 1.000, alpha: 1.0),  // #7dcfff
         ext_orange:    (red: 1.000, green: 0.620, blue: 0.392, alpha: 1.0),  // #ff9e64
         ext_pink:      (red: 0.976, green: 0.165, blue: 0.678, alpha: 1.0),  // #f92aad
-        ext_purple:    (red: 0.694, green: 0.255, blue: 0.945, alpha: 1.0),  // #b141f1
+        ext_purple:    (red: 0.733, green: 0.345, blue: 0.953, alpha: 1.0),  // #bb58f3
         ext_indigo:    (red: 0.490, green: 0.812, blue: 1.000, alpha: 1.0),  // #7dcfff
-        ext_warm_grey: (red: 0.502, green: 0.537, blue: 0.702, alpha: 1.0),  // #8089b3
+        ext_warm_grey: (red: 0.525, green: 0.557, blue: 0.718, alpha: 1.0),  // #868eb7
         ext_yellow:    (red: 0.878, green: 0.706, blue: 0.004, alpha: 1.0),  // #e0b401
 
         // neutrals — gray and neutral ramp
@@ -53,9 +53,9 @@
         neutral_0:     (red: 0.106, green: 0.118, blue: 0.180, alpha: 1.0),  // #1b1e2e
         neutral_1:     (red: 0.122, green: 0.137, blue: 0.208, alpha: 1.0),  // #1f2335
         neutral_2:     (red: 0.141, green: 0.157, blue: 0.231, alpha: 1.0),  // #24283b
-        neutral_3:     (red: 0.231, green: 0.259, blue: 0.380, alpha: 1.0),  // #3b4261
+        neutral_3:     (red: 0.365, green: 0.408, blue: 0.596, alpha: 1.0),  // #5d6898
         neutral_4:     (red: 0.329, green: 0.361, blue: 0.494, alpha: 1.0),  // #545c7e
-        neutral_5:     (red: 0.502, green: 0.537, blue: 0.702, alpha: 1.0),  // #8089b3
+        neutral_5:     (red: 0.525, green: 0.557, blue: 0.718, alpha: 1.0),  // #868eb7
         neutral_6:     (red: 0.663, green: 0.694, blue: 0.839, alpha: 1.0),  // #a9b1d6
         neutral_7:     (red: 0.753, green: 0.792, blue: 0.961, alpha: 1.0),  // #c0caf5
         neutral_8:     (red: 0.663, green: 0.694, blue: 0.839, alpha: 1.0),  // #a9b1d6  fg

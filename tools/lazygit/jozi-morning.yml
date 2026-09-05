@@ -4,14 +4,14 @@
 gui:
   theme:
     activeBorderColor:
-      - "#d6197a"
+      - "#b11565"
       - bold
     inactiveBorderColor:
-      - "#b0b3be"
+      - "#72778b"
     searchingActiveBorderColor:
-      - "#c49000"
+      - "#775800"
     optionsTextColor:
-      - "#4f46e5"
+      - "#4b41e4"
     selectedLineBgColor:
       - "#bfc1cc"
     inactiveViewSelectedLineBgColor:
@@ -23,8 +23,8 @@ gui:
     markedBaseCommitFgColor:
       - "#d5d6db"
     markedBaseCommitBgColor:
-      - "#c49000"
+      - "#775800"
     unstagedChangesColor:
-      - "#d6197a"
+      - "#b11565"
     defaultFgColor:
       - "#343b58"

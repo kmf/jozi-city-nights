@@ -13,7 +13,7 @@ return {
   selection_bg = "#292e42",
 
   scrollbar_thumb = "#24283b",
-  split = "#3b4261",
+  split = "#5d6898",
 
   ansi = {
     "#414868",
@@ -21,7 +21,7 @@ return {
     "#54e484",
     "#e0b401",
     "#7aa2f7",
-    "#b141f1",
+    "#bb58f3",
     "#58c7e0",
     "#a9b1d6",
   },
@@ -32,7 +32,7 @@ return {
     "#54e484",
     "#e0b401",
     "#7aa2f7",
-    "#b141f1",
+    "#bb58f3",
     "#58c7e0",
     "#c0caf5",
   },
@@ -45,7 +45,7 @@ return {
     },
     inactive_tab = {
       bg_color = "#1f2335",
-      fg_color = "#8089b3",
+      fg_color = "#868eb7",
     },
     inactive_tab_hover = {
       bg_color = "#24283b",
@@ -53,7 +53,7 @@ return {
     },
     new_tab = {
       bg_color = "#1f2335",
-      fg_color = "#8089b3",
+      fg_color = "#868eb7",
     },
   },
 }

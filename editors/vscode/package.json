@@ -1,8 +1,8 @@
 {
   "name": "jozi-city-nights",
   "displayName": "Jozi City Nights",
-  "description": "A muted storm backdrop meets synthwave neon — two modes for Johannesburg's restless energy",
-  "version": "0.1.0",
+  "description": "A muted storm backdrop meets synthwave neon \u2014 two modes for Johannesburg's restless energy",
+  "version": "0.2.0",
   "publisher": "obsidian",
   "license": "MIT",
   "engines": {

@@ -7,7 +7,7 @@ gui:
       - "#f92aad"
       - bold
     inactiveBorderColor:
-      - "#3b4261"
+      - "#5d6898"
     searchingActiveBorderColor:
       - "#e0b401"
     optionsTextColor:
@@ -19,7 +19,7 @@ gui:
     cherryPickedCommitFgColor:
       - "#1b1e2e"
     cherryPickedCommitBgColor:
-      - "#b141f1"
+      - "#bb58f3"
     markedBaseCommitFgColor:
       - "#1b1e2e"
     markedBaseCommitBgColor:

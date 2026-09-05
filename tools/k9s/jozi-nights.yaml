@@ -9,7 +9,7 @@ k9s:
   prompt:
     fgColor: "#a9b1d6"
     bgColor: "#1b1e2e"
-    suggestColor: "#b141f1"
+    suggestColor: "#bb58f3"
   info:
     fgColor: "#f92aad"
     sectionColor: "#a9b1d6"
@@ -19,21 +19,21 @@ k9s:
     buttonFgColor: "#1b1e2e"
     buttonBgColor: "#f92aad"
     buttonFocusFgColor: "#1b1e2e"
-    buttonFocusBgColor: "#b141f1"
+    buttonFocusBgColor: "#bb58f3"
     labelFgColor: "#ff9e64"
     fieldFgColor: "#a9b1d6"
   frame:
     border:
-      fgColor: "#3b4261"
+      fgColor: "#5d6898"
       focusColor: "#f92aad"
     menu:
       fgColor: "#a9b1d6"
       keyColor: "#f92aad"
-      numKeyColor: "#b141f1"
+      numKeyColor: "#bb58f3"
     crumbs:
       fgColor: "#1b1e2e"
       bgColor: "#f92aad"
-      activeColor: "#b141f1"
+      activeColor: "#bb58f3"
     status:
       newColor: "#54e484"
       modifyColor: "#e0b401"
@@ -41,12 +41,12 @@ k9s:
       pendingColor: "#ff9e64"
       errorColor: "#f92aad"
       highlightColor: "#7aa2f7"
-      killColor: "#8089b3"
-      completedColor: "#8089b3"
+      killColor: "#868eb7"
+      completedColor: "#868eb7"
     title:
       fgColor: "#f92aad"
       bgColor: "#1b1e2e"
-      highlightColor: "#b141f1"
+      highlightColor: "#bb58f3"
       counterColor: "#7aa2f7"
       filterColor: "#54e484"
   views:
@@ -54,14 +54,14 @@ k9s:
       bgColor: "#1b1e2e"
       defaultDialColor:
         - "#f92aad"
-        - "#b141f1"
+        - "#bb58f3"
       defaultChartColor:
         - "#7aa2f7"
         - "#54e484"
       resourceColors:
         cpu:
           - "#f92aad"
-          - "#b141f1"
+          - "#bb58f3"
         mem:
           - "#7aa2f7"
           - "#54e484"
@@ -72,7 +72,7 @@ k9s:
       cursorBgColor: "#f92aad"
       markColor: "#e0b401"
       header:
-        fgColor: "#8089b3"
+        fgColor: "#868eb7"
         bgColor: "#1b1e2e"
         sorterColor: "#7aa2f7"
     xray:
@@ -80,10 +80,10 @@ k9s:
       bgColor: "#1b1e2e"
       cursorColor: "#f92aad"
       cursorTextColor: "#1b1e2e"
-      graphicColor: "#b141f1"
+      graphicColor: "#bb58f3"
     yaml:
       keyColor: "#f92aad"
-      colonColor: "#3b4261"
+      colonColor: "#5d6898"
       valueColor: "#a9b1d6"
     logs:
       fgColor: "#a9b1d6"
@@ -92,4 +92,4 @@ k9s:
         fgColor: "#f92aad"
         bgColor: "#1b1e2e"
         toggleOnColor: "#54e484"
-        toggleOffColor: "#8089b3"
+        toggleOffColor: "#868eb7"

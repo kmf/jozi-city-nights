@@ -18,11 +18,11 @@
   --background-primary-alt:     #16161e;
   --background-secondary:       #16161e;
   --background-secondary-alt:   #101014;
-  --background-modifier-border: #232433;
+  --background-modifier-border: #5b5e84;
   --background-modifier-border-hover:  #363b54;
   --background-modifier-border-focus:  #f92aad;
   --background-modifier-hover:  #1e202e;
-  --background-modifier-active-hover: #232433;
+  --background-modifier-active-hover: #5b5e84;
 
   /* Text — adjusted faint for deeper backgrounds */
   --text-on-accent: #101014;
@@ -40,10 +40,10 @@
   --tag-background: #16161e;
 
   /* Graph view */
-  --graph-line:        #232433;
+  --graph-line:        #5b5e84;
 
   /* Tables */
-  --table-border-color:     #232433;
+  --table-border-color:     #5b5e84;
   --table-header-background:#16161e;
   --table-row-alt-background:#101014;
 }

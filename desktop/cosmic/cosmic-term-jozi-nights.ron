@@ -13,14 +13,14 @@
     background: Some("#1b1e2e"),
     cursor: Some("#f92aad"),
     bright_foreground: Some("#c0caf5"),
-    dim_foreground: Some("#8089b3"),
+    dim_foreground: Some("#868eb7"),
 
     black: Some("#414868"),
     red: Some("#f92aad"),
     green: Some("#54e484"),
     yellow: Some("#e0b401"),
     blue: Some("#7aa2f7"),
-    magenta: Some("#b141f1"),
+    magenta: Some("#bb58f3"),
     cyan: Some("#58c7e0"),
     white: Some("#a9b1d6"),
 
@@ -29,7 +29,7 @@
     bright_green: Some("#54e484"),
     bright_yellow: Some("#e0b401"),
     bright_blue: Some("#7aa2f7"),
-    bright_magenta: Some("#b141f1"),
+    bright_magenta: Some("#bb58f3"),
     bright_cyan: Some("#58c7e0"),
     bright_white: Some("#c0caf5"),
 
@@ -40,5 +40,5 @@
     dim_blue: Some("#6282c6"),
     dim_magenta: Some("#8e34c1"),
     dim_cyan: Some("#469fb3"),
-    dim_white: Some("#8089b3"),
+    dim_white: Some("#868eb7"),
 )
