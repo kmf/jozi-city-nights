@@ -24,7 +24,7 @@
   --background-secondary-alt:   #1b1e2e;
   --background-modifier-border: #5d6898;
   --background-modifier-border-hover:  #545c7e;
-  --background-modifier-border-focus:  #f92aad;
+  --background-modifier-border-focus:  #f935b1;
   --background-modifier-hover:  #292e42;
   --background-modifier-active-hover: #5d6898;
 
@@ -33,27 +33,27 @@
   --text-muted:     #868eb7;
   --text-faint:     #545c7e;
   --text-on-accent: #1b1e2e;
-  --text-accent:    #f92aad;
+  --text-accent:    #f935b1;
   --text-accent-hover: #ff5cc2;
-  --text-error:     #f92aad;
+  --text-error:     #f935b1;
   --text-warning:   #ff9e64;
   --text-success:   #54e484;
   --text-selection: #292e42;
-  --text-highlight-bg:      #f92aad;
+  --text-highlight-bg:      #f935b1;
   --text-highlight-fg:      #1b1e2e;
 
   /* Interactive */
   --interactive-normal:      #1f2335;
   --interactive-hover:       #292e42;
-  --interactive-accent:      #f92aad;
+  --interactive-accent:      #f935b1;
   --interactive-accent-hover:#ff5cc2;
 
   /* Headings */
-  --h1-color: #f92aad;
+  --h1-color: #f935b1;
   --h2-color: #e0b401;
   --h3-color: #7aa2f7;
   --h4-color: #58c7e0;
-  --h5-color: #bb58f3;
+  --h5-color: #c064f4;
   --h6-color: #868eb7;
 
   /* Code / inline */
@@ -61,20 +61,20 @@
   --code-normal:     #a9b1d6;
   --code-comment:    #6071cc;
   --code-function:   #e0b401;
-  --code-keyword:    #f92aad;
+  --code-keyword:    #f935b1;
   --code-operator:   #89ddff;
   --code-property:   #7dcfff;
   --code-punctuation:#868eb7;
   --code-string:     #54e484;
-  --code-tag:        #f92aad;
+  --code-tag:        #f935b1;
   --code-value:      #ff9e64;
-  --code-important:  #bb58f3;
+  --code-important:  #c064f4;
 
   /* Links */
   --link-color:           #58c7e0;
   --link-color-hover:     #7dcfff;
-  --link-unresolved-color:#f92aad;
-  --link-external-color:  #bb58f3;
+  --link-unresolved-color:#f935b1;
+  --link-external-color:  #c064f4;
 
   /* Tags */
   --tag-color:      #73daca;
@@ -94,9 +94,9 @@
   /* Graph view */
   --graph-line:        #5d6898;
   --graph-node:        #a9b1d6;
-  --graph-node-focused:#f92aad;
+  --graph-node-focused:#f935b1;
   --graph-node-tag:    #73daca;
-  --graph-node-unresolved: #f92aad;
+  --graph-node-unresolved: #f935b1;
   --graph-text:        #a9b1d6;
 
   /* Tables */
@@ -115,7 +115,7 @@
   --background-secondary-alt:   #72778b;
   --background-modifier-border: #72778b;
   --background-modifier-border-hover:  #9699a3;
-  --background-modifier-border-focus:  #b11565;
+  --background-modifier-border-focus:  #a0135b;
   --background-modifier-hover:  #bfc1cc;
   --background-modifier-active-hover: #72778b;
 
@@ -123,43 +123,43 @@
   --text-muted:     #3f4d7d;
   --text-faint:     #9699a3;
   --text-on-accent: #d5d6db;
-  --text-accent:    #b11565;
+  --text-accent:    #a0135b;
   --text-accent-hover: #c0156e;
-  --text-error:     #b11565;
-  --text-warning:   #9d4007;
-  --text-success:   #166534;
+  --text-error:     #a0135b;
+  --text-warning:   #8f3a06;
+  --text-success:   #156031;
   --text-selection: #bfc1cc;
-  --text-highlight-bg:      #b11565;
+  --text-highlight-bg:      #a0135b;
   --text-highlight-fg:      #d5d6db;
 
   --interactive-normal:      #c8c9d1;
   --interactive-hover:       #bfc1cc;
-  --interactive-accent:      #b11565;
+  --interactive-accent:      #a0135b;
   --interactive-accent-hover:#c0156e;
 
-  --h1-color: #b11565;
-  --h2-color: #775800;
-  --h3-color: #4b41e4;
-  --h4-color: #155e75;
+  --h1-color: #a0135b;
+  --h2-color: #6a4f00;
+  --h3-color: #3b30e2;
+  --h4-color: #145a70;
   --h5-color: #7928a8;
   --h6-color: #3f4d7d;
 
   --code-background: #d5d6db;
   --code-normal:     #343b58;
   --code-comment:    #3f4d7d;
-  --code-function:   #775800;
-  --code-keyword:    #b11565;
-  --code-operator:   #4b41e4;
+  --code-function:   #6a4f00;
+  --code-keyword:    #a0135b;
+  --code-operator:   #3b30e2;
   --code-property:   #1d4ed8;
   --code-punctuation:#3f4d7d;
-  --code-string:     #166534;
-  --code-tag:        #b11565;
-  --code-value:      #9d4007;
+  --code-string:     #156031;
+  --code-tag:        #a0135b;
+  --code-value:      #8f3a06;
   --code-important:  #7928a8;
 
-  --link-color:           #155e75;
+  --link-color:           #145a70;
   --link-color-hover:     #0c657e;
-  --link-unresolved-color:#b11565;
+  --link-unresolved-color:#a0135b;
   --link-external-color:  #7928a8;
 
   --tag-color:      #115e59;
@@ -177,9 +177,9 @@
 
   --graph-line:        #72778b;
   --graph-node:        #343b58;
-  --graph-node-focused:#b11565;
+  --graph-node-focused:#a0135b;
   --graph-node-tag:    #115e59;
-  --graph-node-unresolved: #b11565;
+  --graph-node-unresolved: #a0135b;
   --graph-text:        #343b58;
 
   --table-border-color:     #72778b;

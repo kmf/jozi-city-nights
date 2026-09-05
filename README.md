@@ -27,8 +27,8 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 
 | | Token | Hex |
 |---|---|---|
-| ![pink](https://singlecolorimage.com/get/f92aad/16x16) | pink | `#f92aad` |
-| ![purple](https://singlecolorimage.com/get/bb58f3/16x16) | purple | `#bb58f3` |
+| ![pink](https://singlecolorimage.com/get/f935b1/16x16) | pink | `#f935b1` |
+| ![purple](https://singlecolorimage.com/get/c064f4/16x16) | purple | `#c064f4` |
 | ![blue](https://singlecolorimage.com/get/7aa2f7/16x16) | blue | `#7aa2f7` |
 | ![sky](https://singlecolorimage.com/get/7dcfff/16x16) | sky | `#7dcfff` |
 | ![cyan](https://singlecolorimage.com/get/58c7e0/16x16) | cyan | `#58c7e0` |
@@ -44,19 +44,19 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 | | Token | Hex |
 |---|---|---|
 | ![black](https://singlecolorimage.com/get/414868/16x16) | black | `#414868` |
-| ![red](https://singlecolorimage.com/get/f92aad/16x16) | red | `#f92aad` |
+| ![red](https://singlecolorimage.com/get/f935b1/16x16) | red | `#f935b1` |
 | ![green](https://singlecolorimage.com/get/54e484/16x16) | green | `#54e484` |
 | ![yellow](https://singlecolorimage.com/get/e0b401/16x16) | yellow | `#e0b401` |
 | ![blue](https://singlecolorimage.com/get/7aa2f7/16x16) | blue | `#7aa2f7` |
-| ![magenta](https://singlecolorimage.com/get/bb58f3/16x16) | magenta | `#bb58f3` |
+| ![magenta](https://singlecolorimage.com/get/c064f4/16x16) | magenta | `#c064f4` |
 | ![cyan](https://singlecolorimage.com/get/58c7e0/16x16) | cyan | `#58c7e0` |
 | ![white](https://singlecolorimage.com/get/a9b1d6/16x16) | white | `#a9b1d6` |
 | ![bright_black](https://singlecolorimage.com/get/545c7e/16x16) | bright_black | `#545c7e` |
-| ![bright_red](https://singlecolorimage.com/get/f92aad/16x16) | bright_red | `#f92aad` |
+| ![bright_red](https://singlecolorimage.com/get/f935b1/16x16) | bright_red | `#f935b1` |
 | ![bright_green](https://singlecolorimage.com/get/54e484/16x16) | bright_green | `#54e484` |
 | ![bright_yellow](https://singlecolorimage.com/get/e0b401/16x16) | bright_yellow | `#e0b401` |
 | ![bright_blue](https://singlecolorimage.com/get/7aa2f7/16x16) | bright_blue | `#7aa2f7` |
-| ![bright_magenta](https://singlecolorimage.com/get/bb58f3/16x16) | bright_magenta | `#bb58f3` |
+| ![bright_magenta](https://singlecolorimage.com/get/c064f4/16x16) | bright_magenta | `#c064f4` |
 | ![bright_cyan](https://singlecolorimage.com/get/58c7e0/16x16) | bright_cyan | `#58c7e0` |
 | ![bright_white](https://singlecolorimage.com/get/c0caf5/16x16) | bright_white | `#c0caf5` |
 
@@ -78,7 +78,7 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 
 | | Token | Hex |
 |---|---|---|
-| ![cursor](https://singlecolorimage.com/get/f92aad/16x16) | cursor | `#f92aad` |
+| ![cursor](https://singlecolorimage.com/get/f935b1/16x16) | cursor | `#f935b1` |
 | ![cursor_text](https://singlecolorimage.com/get/1b1e2e/16x16) | cursor_text | `#1b1e2e` |
 | ![selection_bg](https://singlecolorimage.com/get/292e42/16x16) | selection_bg | `#292e42` |
 | ![selection_fg](https://singlecolorimage.com/get/c0caf5/16x16) | selection_fg | `#c0caf5` |
@@ -101,37 +101,37 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 
 | | Token | Hex |
 |---|---|---|
-| ![pink](https://singlecolorimage.com/get/b11565/16x16) | pink | `#b11565` |
+| ![pink](https://singlecolorimage.com/get/a0135b/16x16) | pink | `#a0135b` |
 | ![purple](https://singlecolorimage.com/get/7928a8/16x16) | purple | `#7928a8` |
-| ![blue](https://singlecolorimage.com/get/4b41e4/16x16) | blue | `#4b41e4` |
+| ![blue](https://singlecolorimage.com/get/3b30e2/16x16) | blue | `#3b30e2` |
 | ![sky](https://singlecolorimage.com/get/1d4ed8/16x16) | sky | `#1d4ed8` |
-| ![cyan](https://singlecolorimage.com/get/155e75/16x16) | cyan | `#155e75` |
+| ![cyan](https://singlecolorimage.com/get/145a70/16x16) | cyan | `#145a70` |
 | ![teal](https://singlecolorimage.com/get/115e59/16x16) | teal | `#115e59` |
 | ![mint](https://singlecolorimage.com/get/0c657e/16x16) | mint | `#0c657e` |
-| ![green](https://singlecolorimage.com/get/166534/16x16) | green | `#166534` |
-| ![yellow](https://singlecolorimage.com/get/775800/16x16) | yellow | `#775800` |
-| ![orange](https://singlecolorimage.com/get/9d4007/16x16) | orange | `#9d4007` |
-| ![ice](https://singlecolorimage.com/get/4b41e4/16x16) | ice | `#4b41e4` |
+| ![green](https://singlecolorimage.com/get/156031/16x16) | green | `#156031` |
+| ![yellow](https://singlecolorimage.com/get/6a4f00/16x16) | yellow | `#6a4f00` |
+| ![orange](https://singlecolorimage.com/get/8f3a06/16x16) | orange | `#8f3a06` |
+| ![ice](https://singlecolorimage.com/get/3b30e2/16x16) | ice | `#3b30e2` |
 
 **ANSI**
 
 | | Token | Hex |
 |---|---|---|
 | ![black](https://singlecolorimage.com/get/343b58/16x16) | black | `#343b58` |
-| ![red](https://singlecolorimage.com/get/b11565/16x16) | red | `#b11565` |
-| ![green](https://singlecolorimage.com/get/166534/16x16) | green | `#166534` |
-| ![yellow](https://singlecolorimage.com/get/775800/16x16) | yellow | `#775800` |
-| ![blue](https://singlecolorimage.com/get/4b41e4/16x16) | blue | `#4b41e4` |
+| ![red](https://singlecolorimage.com/get/a0135b/16x16) | red | `#a0135b` |
+| ![green](https://singlecolorimage.com/get/156031/16x16) | green | `#156031` |
+| ![yellow](https://singlecolorimage.com/get/6a4f00/16x16) | yellow | `#6a4f00` |
+| ![blue](https://singlecolorimage.com/get/3b30e2/16x16) | blue | `#3b30e2` |
 | ![magenta](https://singlecolorimage.com/get/7928a8/16x16) | magenta | `#7928a8` |
-| ![cyan](https://singlecolorimage.com/get/155e75/16x16) | cyan | `#155e75` |
+| ![cyan](https://singlecolorimage.com/get/145a70/16x16) | cyan | `#145a70` |
 | ![white](https://singlecolorimage.com/get/c8c9d1/16x16) | white | `#c8c9d1` |
 | ![bright_black](https://singlecolorimage.com/get/3f4d7d/16x16) | bright_black | `#3f4d7d` |
-| ![bright_red](https://singlecolorimage.com/get/b11565/16x16) | bright_red | `#b11565` |
-| ![bright_green](https://singlecolorimage.com/get/166534/16x16) | bright_green | `#166534` |
-| ![bright_yellow](https://singlecolorimage.com/get/775800/16x16) | bright_yellow | `#775800` |
-| ![bright_blue](https://singlecolorimage.com/get/4b41e4/16x16) | bright_blue | `#4b41e4` |
+| ![bright_red](https://singlecolorimage.com/get/a0135b/16x16) | bright_red | `#a0135b` |
+| ![bright_green](https://singlecolorimage.com/get/156031/16x16) | bright_green | `#156031` |
+| ![bright_yellow](https://singlecolorimage.com/get/6a4f00/16x16) | bright_yellow | `#6a4f00` |
+| ![bright_blue](https://singlecolorimage.com/get/3b30e2/16x16) | bright_blue | `#3b30e2` |
 | ![bright_magenta](https://singlecolorimage.com/get/7928a8/16x16) | bright_magenta | `#7928a8` |
-| ![bright_cyan](https://singlecolorimage.com/get/155e75/16x16) | bright_cyan | `#155e75` |
+| ![bright_cyan](https://singlecolorimage.com/get/145a70/16x16) | bright_cyan | `#145a70` |
 | ![bright_white](https://singlecolorimage.com/get/343b58/16x16) | bright_white | `#343b58` |
 
 **Neutral ramp**
@@ -152,7 +152,7 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 
 | | Token | Hex |
 |---|---|---|
-| ![cursor](https://singlecolorimage.com/get/b11565/16x16) | cursor | `#b11565` |
+| ![cursor](https://singlecolorimage.com/get/a0135b/16x16) | cursor | `#a0135b` |
 | ![cursor_text](https://singlecolorimage.com/get/d5d6db/16x16) | cursor_text | `#d5d6db` |
 | ![selection_bg](https://singlecolorimage.com/get/bfc1cc/16x16) | selection_bg | `#bfc1cc` |
 | ![selection_fg](https://singlecolorimage.com/get/1f2335/16x16) | selection_fg | `#1f2335` |
@@ -261,7 +261,7 @@ For Obsidian midnight: copy `apps/obsidian/snippets/jozi-midnight.css` to `<vaul
 Jozi City Nights sits at the intersection of Tokyo Night Storm's restraint and synthwave's electricity:
 
 - **Muted storm backgrounds** — deep navy blue-greys from Tokyo Night Storm (`#1b1e2e`, `#1f2335`, `#24283b`) that stay out of your way
-- **Neon synthwave accents** — hot pink `#f92aad`, electric purple `#bb58f3`, neon green `#54e484`, inspired by Kabukicho
+- **Neon synthwave accents** — hot pink `#f935b1`, electric purple `#c064f4`, neon green `#54e484`, inspired by Kabukicho
 - **Three modes** — `nights` is the city after dark, `morning` is the same energy after the storm passes, `midnight` goes deeper with Tokyo Night's darkest backgrounds (`#101014`, `#16161e`, `#1a1b26`)
 
 The canonical palette is defined in [`palette.json`](./palette.json).

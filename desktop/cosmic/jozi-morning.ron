@@ -6,10 +6,10 @@
         name: "jozi-morning",
 
         // base accents
-        blue:          (red: 0.294, green: 0.255, blue: 0.894, alpha: 1.0),  // #4b41e4
-        red:           (red: 0.694, green: 0.082, blue: 0.396, alpha: 1.0),  // #b11565
-        green:         (red: 0.086, green: 0.396, blue: 0.204, alpha: 1.0),  // #166534
-        yellow:        (red: 0.467, green: 0.345, blue: 0.000, alpha: 1.0),  // #775800
+        blue:          (red: 0.294, green: 0.255, blue: 0.894, alpha: 1.0),  // #3b30e2
+        red:           (red: 0.694, green: 0.082, blue: 0.396, alpha: 1.0),  // #a0135b
+        green:         (red: 0.086, green: 0.396, blue: 0.204, alpha: 1.0),  // #156031
+        yellow:        (red: 0.467, green: 0.345, blue: 0.000, alpha: 1.0),  // #6a4f00
 
         // cosmic-specific brights — deeper/bolder for desktop UI
         bright_blue:   (red: 0.263, green: 0.231, blue: 0.820, alpha: 1.0),  // #433bd1
@@ -19,15 +19,15 @@
         bright_orange: (red: 0.780, green: 0.298, blue: 0.020, alpha: 1.0),  // #c74c05
 
         // accent slots
-        accent_blue:   (red: 0.294, green: 0.255, blue: 0.894, alpha: 1.0),  // #4b41e4
-        accent_green:  (red: 0.086, green: 0.396, blue: 0.204, alpha: 1.0),  // #166534
+        accent_blue:   (red: 0.294, green: 0.255, blue: 0.894, alpha: 1.0),  // #3b30e2
+        accent_green:  (red: 0.086, green: 0.396, blue: 0.204, alpha: 1.0),  // #156031
         accent_indigo: (red: 0.475, green: 0.157, blue: 0.659, alpha: 1.0),  // #7928a8
-        accent_orange: (red: 0.616, green: 0.251, blue: 0.027, alpha: 1.0),  // #9d4007
-        accent_pink:   (red: 0.694, green: 0.082, blue: 0.396, alpha: 1.0),  // #b11565
+        accent_orange: (red: 0.616, green: 0.251, blue: 0.027, alpha: 1.0),  // #8f3a06
+        accent_pink:   (red: 0.694, green: 0.082, blue: 0.396, alpha: 1.0),  // #a0135b
         accent_purple: (red: 0.475, green: 0.157, blue: 0.659, alpha: 1.0),  // #7928a8
-        accent_red:    (red: 0.694, green: 0.082, blue: 0.396, alpha: 1.0),  // #b11565
+        accent_red:    (red: 0.694, green: 0.082, blue: 0.396, alpha: 1.0),  // #a0135b
         accent_warm_grey: (red: 0.247, green: 0.302, blue: 0.490, alpha: 1.0),  // #3f4d7d
-        accent_yellow: (red: 0.467, green: 0.345, blue: 0.000, alpha: 1.0),  // #775800
+        accent_yellow: (red: 0.467, green: 0.345, blue: 0.000, alpha: 1.0),  // #6a4f00
 
         // ext slots — cosmic-specific bright accents
         ext_blue:      (red: 0.263, green: 0.231, blue: 0.820, alpha: 1.0),  // #433bd1
