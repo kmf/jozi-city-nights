@@ -229,7 +229,7 @@ A colorscheme born from Johannesburg after dark — the quiet blue-grey of a sto
 
 ## Install
 
-Clone the repo and cherry-pick the configs you need:
+Per-tool steps are in [INSTALL.md](./INSTALL.md). Clone the repo and cherry-pick the configs you need:
 
 ```bash
 git clone https://github.com/kmf/jozi-city-nights ~/.local/share/jozi-city-nights
